@@ -1,0 +1,134 @@
+// Imports Google font.
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+// CSS Reset
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	width: 100vw;
+	height: 100vh;
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	overflow: hidden; // Extra content is hidden.
+}
+
+// Default Styling for Laptop and Desktop
+body {
+	background: radial-gradient(grey, black);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	// Flexbox container
+	.container {
+		width: 90vw;
+		display: flex;
+		align-items: center;
+
+		// Image panels
+		.panel {
+			height: 80vh;
+			margin: 10px;
+			color: white;
+			background-position: center; // Positions the image.
+			background-repeat: no-repeat;
+			border-radius: 50px;
+			cursor: pointer;
+			transition: all 1s ease-out; // All transition properties will have a duration of 1 second, and transitions with a slow end.
+			flex-grow: 1; // All panels will take up 1 space in the flexbox container.
+
+			// Text
+			h3 {
+				position: absolute; // Positions the text relative to its panel, and allows it to overlap.
+				top: 85%; // Moves away from the top.
+				left: 10%; // Moves away from the left.
+				font-size: 30px;
+				opacity: 0; // Text is hidden.
+			}
+		}
+
+		// Active image panel
+		.active {
+			flex-grow: 4; // The active panel will take up 4 spaces in the flexbox container.
+
+			h3 {
+				opacity: 1; // Text is visible.
+				transition: opacity 0.7s ease-in 0.4s; // The opacity transition property will have a duration of 0.7 seconds, transitions with a slow start, and has a delay of 0.4 seconds.
+			}
+		}
+
+		// Individual image panels
+		.beach {
+			background-image: url('img/beach.jpg');
+		}
+
+		.city {
+			background-image: url('img/city.jpg');
+		}
+
+		.desert {
+			background-image: url('img/desert.jpg');
+		}
+
+		.forest {
+			background-image: url('img/forest.jpg');
+		}
+
+		.mountain {
+			background-image: url('img/mountain.jpg');
+		}
+	}
+}
+
+// Removes 'the World' if the viewport's width is 770 px or smaller.
+@media (max-width: 770px) {
+	// Notice how I can use just the class since it wasn't used above.
+	.second-text {
+		opacity: 0;
+	}
+}
+
+@media (max-width: 480px) {
+	// Notice how I have to include the nested selectors.
+	body {
+		.container {
+			width: 100vw;
+
+			.panel:nth-of-type(4),
+			.panel:nth-of-type(5) {
+				display: none; // Removes the last two panels on the right.
+			}
+		}
+	}
+}
+
+@media (max-width: 260px) {
+	.first-text {
+		opacity: 0; // Removes 'Explore'
+	}
+}
+
+// Moves the text up if the viewport's height is 560px or smaller.
+@media (max-height: 560px) {
+	body {
+		.container {
+			.panel {
+				h3 {
+					top: 80%;
+				}
+			}
+		}
+	}
+}
+
+@media (max-height: 320px) {
+	body {
+		.container {
+			.panel {
+				h3 {
+					opacity: 0; // Removes all the text.
+				}
+			}
+		}
+	}
+}
