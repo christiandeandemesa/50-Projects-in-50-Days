@@ -1,9 +1,9 @@
-// Imports Google font.
+// Imports Google font
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 // Sass variables.
 $primary-color: #3498db;
-$background-color: linear-gradient(to right, #db3398, #98db33);
+$background-color: linear-gradient(to right, #3e33db, #33dbae, #3e33db);
 
 // CSS Reset
 * {
@@ -14,40 +14,45 @@ $background-color: linear-gradient(to right, #db3398, #98db33);
 	overflow: hidden; // Extra content is hidden.
 }
 
+// Default styling for Laptop and Desktop
 body {
 	width: 100vw;
 	height: 100vh;
-	background: black;
+	background: $background-color;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
+	// Flexbox container
 	.container {
 		text-align: center;
 
+		// Progress bar
 		.progress-container {
 			width: 350px;
 			max-width: 100%;
 			display: flex;
 			justify-content: space-between;
-			position: relative;
+			position: relative; // ???
 			margin-bottom: 30px;
 
+			// Gray progress line
 			&::before {
-				content: '';
+				content: ''; // Must include content for ::before and ::after to display.
 				width: 100%;
-				height: 4px;
+				height: 5px;
 				position: absolute;
 				top: 50%;
 				left: 0;
 				background: gray;
-				transform: translateY(-50%);
+				transform: translateY(-50%); // ???
 				z-index: -1;
 			}
 
+			// Blue progress line
 			.progress {
 				width: 0%;
-				height: 4px;
+				height: 5px;
 				position: absolute;
 				top: 50%;
 				left: 0;
@@ -57,40 +62,45 @@ body {
 				transition: 0.4s ease;
 			}
 
+			// Progess numbers
 			.circle {
-				width: 30px;
-				height: 30px;
+				width: 35px;
+				height: 35px;
 				background: white;
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				border: 3px solid gray;
+				border: 3.5px solid gray;
 				border-radius: 50%;
 				transition: 0.4s ease;
 			}
 
+			// Active progress numbers
 			.active {
 				border-color: $primary-color;
 			}
 		}
 
+		// Prev and next buttons
 		.btn {
 			margin: 5px;
 			padding: 8px 30px;
 			background: $primary-color;
 			color: white;
-			font-size: 14px;
+			font-size: 20px;
 			border: 0;
 			border-radius: 6px;
 			cursor: pointer;
 
+			// Active prev and next buttons
 			&:active {
 				transform: scale(0.98);
 			}
 
+			// Disabled prev and next buttons
 			&:disabled {
 				background: gray;
-				cursor: not-allowed;
+				cursor: not-allowed; // Cursor takes the form of a prohibition sign.
 			}
 		}
 	}
