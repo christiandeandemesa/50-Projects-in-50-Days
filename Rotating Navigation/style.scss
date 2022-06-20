@@ -13,6 +13,7 @@ $secondary-color: #333;
 
 body {
 	background: $secondary-color;
+	overflow-x: hidden; // Removes the addition of a horizontal scrollbar when the article is rotated.
 
 	// Article container
 	.container {
