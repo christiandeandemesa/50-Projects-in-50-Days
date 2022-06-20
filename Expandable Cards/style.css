@@ -1,126 +1,124 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
 * {
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	width: 100vw;
-	height: 100vh;
-	font-family: 'Open Sans', sans-serif;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 body {
-	background: radial-gradient(grey, black);
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	-ms-flex-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+  background: radial-gradient(grey, black);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .container {
-	width: 90vw;
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .container .panel {
-	position: relative;
-	height: 80vh;
-	margin: 10px;
-	color: white;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	border-radius: 50px;
-	cursor: pointer;
-	-webkit-transition: all 1s ease-in-out;
-	transition: all 1s ease-in-out;
-	-webkit-box-flex: 1;
-	-ms-flex: 1;
-	flex: 1;
+  height: 80vh;
+  margin: 10px;
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 body .container .panel h3 {
-	position: absolute;
-	top: 85%;
-	left: 10%;
-	font-size: 30px;
-	opacity: 0;
+  position: absolute;
+  top: 85%;
+  left: 10%;
+  font-size: 30px;
+  opacity: 0;
 }
 
 body .container .active {
-	-webkit-box-flex: 4;
-	-ms-flex: 4;
-	flex: 4;
+  -webkit-box-flex: 4;
+      -ms-flex-positive: 4;
+          flex-grow: 4;
 }
 
 body .container .active h3 {
-	opacity: 1;
-	-webkit-transition: opacity 0.7s ease-in 0.4s;
-	transition: opacity 0.7s ease-in 0.4s;
+  opacity: 1;
+  -webkit-transition: opacity 0.7s ease-in 0.4s;
+  transition: opacity 0.7s ease-in 0.4s;
 }
 
 body .container .beach {
-	background-image: url('img/beach.jpg');
+  background-image: url("img/beach.jpg");
 }
 
 body .container .city {
-	background-image: url('img/city.jpg');
+  background-image: url("img/city.jpg");
 }
 
 body .container .desert {
-	background-image: url('img/desert.jpg');
+  background-image: url("img/desert.jpg");
 }
 
 body .container .forest {
-	background-image: url('img/forest.jpg');
+  background-image: url("img/forest.jpg");
 }
 
 body .container .mountain {
-	background-image: url('img/mountain.jpg');
+  background-image: url("img/mountain.jpg");
 }
 
 @media (max-width: 770px) {
-	.second-text {
-		opacity: 0;
-	}
+  .second-text {
+    opacity: 0;
+  }
 }
 
 @media (max-width: 480px) {
-	body .container {
-		width: 100vw;
-	}
-	body .container .panel:nth-of-type(4),
-	body .container .panel:nth-of-type(5) {
-		display: none;
-	}
+  body .container {
+    width: 100vw;
+  }
+  body .container .panel:nth-of-type(4),
+  body .container .panel:nth-of-type(5) {
+    display: none;
+  }
 }
 
 @media (max-width: 260px) {
-	.first-text {
-		opacity: 0;
-	}
+  .first-text {
+    opacity: 0;
+  }
 }
 
 @media (max-height: 560px) {
-	body .container .panel h3 {
-		top: 80%;
-	}
+  body .container .panel h3 {
+    top: 80%;
+  }
 }
 
 @media (max-height: 320px) {
-	body .container .panel h3 {
-		opacity: 0;
-	}
+  body .container .panel h3 {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */

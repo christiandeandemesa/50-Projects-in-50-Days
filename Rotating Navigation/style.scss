@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$primary-color: #ff7979;
+$secondary-color: #333;
+
+// CSS Reset
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: $secondary-color;
+
+	// Article container
+	.container {
+		width: 100vw;
+		min-height: 100vh;
+		padding: 50px;
+		background: white;
+		transform-origin: top left; // Sets at what point the element transforms from.
+		transition: transform 0.5s linear; // The #close and show-nav transform property will have a duration of 0.5 seconds, and transitions at a consistent speed.
+
+		// Top left circle container
+		.circle-container {
+			position: fixed; // Positions the circle in the same place while scrolling.
+			top: -100px;
+			left: -100px;
+
+			// Top left circle
+			.circle {
+				width: 200px;
+				height: 200px;
+				background: $primary-color;
+				border-radius: 50%;
+				transition: transform 0.5s linear; // The lower .circle transform property will have a duration of 0.5 seconds, and transitions at a consistent speed.
+
+				// X and hamburger menu buttons
+				button {
+					height: 100px;
+					position: absolute; // Positions the text relative to the circle, and allows it to overlap.
+					top: 50%;
+					left: 50%;
+					background: transparent; // Removes the button's background color.
+					color: white;
+					border: 0; // Removes the button's border.
+					font-size: 26px;
+					cursor: pointer;
+				}
+
+				// X button
+				#close {
+					top: 60%; // Moves from the top of the circle by 60%.
+					transform: rotate(90deg); // Rotates clockwise by 90 degrees.
+					transform-origin: top left;
+				}
+
+				// Hamburger menu button
+				#open {
+					left: 60%; // Moves from the left of the circle by 60%.
+				}
+			}
+		}
+
+		// Article content container
+		.content {
+			max-width: 1400px; // Largest allowed width.
+			margin: 50px auto; // Has a space of 50px between the viewport's edge and the top and bottom borders, and a variable space between the viewport's edge and the left and right borders.
+
+			// Name
+			.author {
+				color: gray;
+				font-style: italic;
+			}
+
+			// Red Panda image
+			img {
+				max-width: 100%;
+			}
+
+			// Text
+			.text {
+				color: $secondary-color;
+				line-height: 1.5; // The vertical space between lines of text.
+			}
+		}
+	}
+
+	// show-nav class
+	.show-nav {
+		transform: rotate(-20deg); // Rotates counter-clockwise by 20 degrees.
+
+		// Links when there is a show-nav class
+		& + nav li {
+			transform: translateX(0); // Slides in from the left to their original positions.
+			transition-delay: 0.3s; // Adds a 0.3 second delay to the below li transition when the article rotates out, but not when it rotates in.
+		}
+
+		// Top left circle when there is a show-nav class
+		.circle {
+			transform: rotate(-70deg); // Rotates counter-clockwise by 70 degrees.
+		}
+	}
+
+	// Navigation behind article container
+	nav {
+		position: fixed; // Positions the navigation in the same place while scrolling.
+		bottom: 40px;
+		left: 0;
+		z-index: 2; // Places the navigation closest to the viewer, so the links can be interacted with.
+
+		// Links container
+		ul {
+			padding-left: 25px;
+			list-style-type: none; // Removes the bullet points.
+
+			// Links
+			li {
+				margin: 40px 0;
+				color: white;
+				transform: translateX(
+					-100%
+				); // Initially places the home link to the left of the viewport by 100%.
+				transition: transform 0.4s ease-in; // The above & + nav li transform property will have a duration of 0.4 seconds with a slow start.
+
+				// About link
+				& + li {
+					margin-left: 15px;
+					transform: translateX(
+						-150%
+					); // Initially places the about link to the left of the viewport by 150%.
+
+					// Contact link
+					& + li {
+						margin-left: 30px;
+						transform: translateX(
+							-200%
+						); // Initially places the contact link to the left of the viewport by 200%.
+					}
+				}
+
+				// Link icons
+				i {
+					margin-right: 10px;
+					font-size: 20px;
+
+					// Hyperlink
+					a {
+						color: white;
+						text-decoration: none; // Removes the underline.
+						transition: color 0.6s ease-in; // The &:hover color property will have a duration of 0.6 seconds with a slow start.
+
+						&:hover {
+							color: $primary-color;
+							transition: color 0.3s ease-out; // The a color property will have a duration of 0.3 seconds with a slow end.
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Rotates the article more clockwise if the viewport's height is 560 px or smaller.
+@media (max-height: 560px) {
+	body {
+		.container {
+			.circle-container {
+				.circle {
+					#close {
+						transform: rotate(100deg);
+					}
+				}
+			}
+		}
+		.show-nav {
+			transform: rotate(-30deg);
+		}
+	}
+}
+
+// Rotates the article more clockwise if the viewport's height is 420 px or smaller.
+@media (max-height: 420px) {
+	body {
+		.container {
+			.circle-container {
+				.circle {
+					#close {
+						transform: rotate(120deg);
+					}
+				}
+			}
+		}
+		.show-nav {
+			transform: rotate(-50deg);
+		}
+	}
+}
