@@ -64,8 +64,8 @@ body .container .progress-container .progress {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   z-index: -1;
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 body .container .progress-container .circle {
@@ -83,8 +83,8 @@ body .container .progress-container .circle {
           align-items: center;
   border: 3.5px solid gray;
   border-radius: 50%;
-  -webkit-transition: 0.4s ease;
-  transition: 0.4s ease;
+  -webkit-transition: 0.3s ease 0.5s;
+  transition: 0.3s ease 0.5s;
 }
 
 body .container .progress-container .active {

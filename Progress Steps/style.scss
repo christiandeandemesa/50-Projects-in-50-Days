@@ -33,7 +33,7 @@ body {
 			max-width: 100%;
 			display: flex;
 			justify-content: space-between;
-			position: relative; // ???
+			position: relative; // Positions the progress bar within the width of the progress-container.
 			margin-bottom: 30px;
 
 			// Gray progress line
@@ -45,7 +45,7 @@ body {
 				top: 50%;
 				left: 0;
 				background: gray;
-				transform: translateY(-50%); // ???
+				transform: translateY(-50%); // Vertically centers the gray progress line.
 				z-index: -1;
 			}
 
@@ -59,7 +59,7 @@ body {
 				background: $primary-color;
 				transform: translateY(-50%);
 				z-index: -1;
-				transition: 0.4s ease;
+				transition: 1s ease; // This will transition with a duration of 1 seconds and transitions with a slow start and end.
 			}
 
 			// Progess numbers
@@ -72,7 +72,7 @@ body {
 				align-items: center;
 				border: 3.5px solid gray;
 				border-radius: 50%;
-				transition: 0.4s ease;
+				transition: 0.3s ease 0.5s; // This will transition with a duration of 0.3 seconds, transitions with a slow start and end, and has a delay of 0.5 seconds.
 			}
 
 			// Active progress numbers
