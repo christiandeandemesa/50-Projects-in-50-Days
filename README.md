@@ -9,3 +9,6 @@ However, some of the HTML, CSS, or JS may differ from what the course provided.
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Progress%20Steps'>PROJECT 2: PROGRESS STEPS</a>
 ![Progress Steps](https://user-images.githubusercontent.com/85912934/174536880-471f8f5e-5e75-4dc8-8a63-98f61d10430d.png)
+
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Rotating%20Navigation'>PROJECT 3: ROTATING NAVIGATION</a>
+![Rotating Navigation](https://user-images.githubusercontent.com/85912934/174690687-91db6071-711e-49e5-b6a4-d354f60a63f1.png)
