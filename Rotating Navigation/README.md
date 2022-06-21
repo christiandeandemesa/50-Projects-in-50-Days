@@ -10,6 +10,7 @@ custom CSS reset, and animations.
 ## Features
 - User can click the hamburger menu button to rotate the article, revealing the navigation menu and an X button.
 - User can click the X button to place the article in its original position, hiding the navigation menu.
+- User can click the dummy links to open a new tab to Google.
 - Responsive web design for the Galaxy Fold, Samsung Galaxy S8+, iPhone SE, iPhone 12 Pro, Pixel 5, Samsung Galaxy A51/71, Samsung Galaxy S20 Ultra, iPhone XR, Surface 
   Duo, iPad Mini, iPad Air, Surface Pro 7, Nesthub, and Nesthub Max in portrait and landscape sizes, and most standard laptops.
 
