@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$primary-color: #ff7979;
+$secondary-color: #333;
+
+// CSS Reset
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+// Default styling for Laptop and Desktop
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url('img/marble.jpg');
+
+	// Search bar container
+	.search {
+		position: relative; // Required for position: absolute to work correctly.
+		height: 50px;
+
+		// Search bar
+		.input {
+			width: 50px;
+			height: 50px;
+			padding: 15px;
+			background: white;
+			border: 0;
+			outline: none; // Removes the search bar's outline.
+			font-size: 18px;
+			transition: width 0.3s ease; // The .active .input's width transitions in 0.3 seconds with a slow start and end.
+		}
+
+		// Magnifying glass button
+		.btn {
+			width: 50px;
+			height: 50px;
+			position: absolute; // Positions the button within the search bar container, and overlaps the search bar.
+			top: 0;
+			left: 0;
+			background: white;
+			border: 0;
+			font-size: 24px;
+			cursor: pointer;
+			transition: transform 0.3s ease; // The .active .btn's transform transitions in 0.3 seconds with a slow start and end.
+		}
+	}
+
+	.active {
+		.input {
+			width: 200px;
+		}
+
+		.btn {
+			border-left: 1px solid gray;
+			transform: translateX(198px); // Button will move to the right 198 px.
+		}
+	}
+}
