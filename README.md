@@ -16,3 +16,6 @@ https://user-images.githubusercontent.com/85912934/174892430-96c7a112-67ba-4102-
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Hidden%20Search%20Widget' target='_blank'>PROJECT 4: HIDDEN SEARCH WIDGET</a>
 https://user-images.githubusercontent.com/85912934/174892551-51527e58-c6c1-42b9-a5bc-67e4054df19f.mp4
 
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Blurry%20Loading' target='_blank'>PROJECT 5: BLURRY LOADING</a>
+https://user-images.githubusercontent.com/85912934/174947031-8a113b64-107e-4a3f-8578-54c0f440f791.mp4
+
