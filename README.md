@@ -4,11 +4,15 @@ Exactly as the title says, and all projects come from this [course](https://www.
 <br>
 However, some of the HTML, CSS, or JS may differ from what the course provided.
 
-### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Expandable%20Cards'>PROJECT 1: EXPANDABLE CARDS</a>
-![Expandable Cards](https://user-images.githubusercontent.com/85912934/174413248-2df432b0-09e3-4846-965a-d59646cf3371.png)
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Expandable%20Cards' target='_blank'>PROJECT 1: EXPANDABLE CARDS</a>
+https://user-images.githubusercontent.com/85912934/174892307-9a6194c2-e619-48fa-8000-9fc126242b0e.mp4
 
-### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Progress%20Steps'>PROJECT 2: PROGRESS STEPS</a>
-![Progress Steps](https://user-images.githubusercontent.com/85912934/174536880-471f8f5e-5e75-4dc8-8a63-98f61d10430d.png)
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Progress%20Steps' target='_blank'>PROJECT 2: PROGRESS STEPS</a>
+https://user-images.githubusercontent.com/85912934/174892402-dd3b3136-6221-4f56-a5f7-dc3c32950d94.mp4
 
-### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Rotating%20Navigation'>PROJECT 3: ROTATING NAVIGATION</a>
-![Rotating Navigation](https://user-images.githubusercontent.com/85912934/174690687-91db6071-711e-49e5-b6a4-d354f60a63f1.png)
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Rotating%20Navigation' target='_blank'>PROJECT 3: ROTATING NAVIGATION</a>
+https://user-images.githubusercontent.com/85912934/174892430-96c7a112-67ba-4102-843c-4b6423ce8232.mp4
+
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Hidden%20Search%20Widget' target='_blank'>PROJECT 4: HIDDEN SEARCH WIDGET</a>
+https://user-images.githubusercontent.com/85912934/174892551-51527e58-c6c1-42b9-a5bc-67e4054df19f.mp4
+
