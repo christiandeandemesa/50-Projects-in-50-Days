@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$primary-color: #fefdaa;
+$secondary-color: #fe0178;
+
+// CSS Reset
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+// Styling for Laptops and Desktops
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: url('img/notepad.jpg') center/cover no-repeat; // Background is an image with its position centered, covers the entire viewport, and does not repeat.
+	overflow-x: hidden; // Hides the scrolling boxes outside of the 100 viewport width.
+
+	h1 {
+		margin: 10px;
+	}
+
+	// Scrolling boxes
+	.box {
+		width: 300px;
+		height: 300px;
+		margin: 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: $primary-color;
+		box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3); // Adds a shadow that is 2px to the right, 4px down, has a 5px blur, and a specific color.
+		transform: translateX(
+			400%
+		); // Moves the odd scrolling boxes 400% of the viewport width to the right.
+		transition: transform 0.8s ease; // .box.show's transform has a 0.8 second duration, and a slow start and end.
+
+		// Different styling for even scrolling boxes
+		&:nth-of-type(even) {
+			background: $secondary-color;
+			transform: translateX(
+				-400%
+			); // Moves the even scrolling boxes 400% of the viewport width to the left.
+		}
+	}
+
+	// If only .show is put, it will not override the &:nth-of-type(even)'s transform styling.
+	.box.show {
+		transform: translateX(0); // Moves the scrolling boxes to their original position.
+	}
+}
