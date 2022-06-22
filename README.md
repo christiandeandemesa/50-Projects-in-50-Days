@@ -4,18 +4,20 @@ Exactly as the title says, and all projects come from this [course](https://www.
 <br>
 However, some of the HTML, CSS, or JS may differ from what the course provided.
 
-### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Expandable%20Cards' target='_blank'>PROJECT 1: EXPANDABLE CARDS</a>
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Expandable%20Cards' target='_blank' rel="noreferrer noopener">PROJECT 1: EXPANDABLE CARDS</a>
 https://user-images.githubusercontent.com/85912934/174892307-9a6194c2-e619-48fa-8000-9fc126242b0e.mp4
 
-### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Progress%20Steps' target='_blank'>PROJECT 2: PROGRESS STEPS</a>
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Progress%20Steps' target='_blank' rel="noreferrer noopener">PROJECT 2: PROGRESS STEPS</a>
 https://user-images.githubusercontent.com/85912934/174892402-dd3b3136-6221-4f56-a5f7-dc3c32950d94.mp4
 
-### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Rotating%20Navigation' target='_blank'>PROJECT 3: ROTATING NAVIGATION</a>
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Rotating%20Navigation' target='_blank' rel="noreferrer noopener">PROJECT 3: ROTATING NAVIGATION</a>
 https://user-images.githubusercontent.com/85912934/174892430-96c7a112-67ba-4102-843c-4b6423ce8232.mp4
 
-### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Hidden%20Search%20Widget' target='_blank'>PROJECT 4: HIDDEN SEARCH WIDGET</a>
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Hidden%20Search%20Widget' target='_blank' rel="noreferrer noopener">PROJECT 4: HIDDEN SEARCH WIDGET</a>
 https://user-images.githubusercontent.com/85912934/174892551-51527e58-c6c1-42b9-a5bc-67e4054df19f.mp4
 
-### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Blurry%20Loading' target='_blank'>PROJECT 5: BLURRY LOADING</a>
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Blurry%20Loading' target='_blank' rel="noreferrer noopener">PROJECT 5: BLURRY LOADING</a>
 https://user-images.githubusercontent.com/85912934/174947031-8a113b64-107e-4a3f-8578-54c0f440f791.mp4
 
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Scroll%20Animation' target='_blank' rel="noreferrer noopener">PROJECT 6: SCROLL ANIMATION</a>
+https://user-images.githubusercontent.com/85912934/175115661-cba8447f-f789-425f-ac14-9b10221f0a96.mp4
