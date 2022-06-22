@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+// CSS Reset
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+// Styling for Laptop and Desktop
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden; // Needed to cut off extra parts of the background image;
+
+	// Background image
+	.bg {
+		width: calc(
+			100vw + 60px
+		); // Added 60px to the width and height to account for the top and left, and have the image cover the entire viewport.
+		height: calc(100vh + 60px);
+		position: absolute;
+		top: -30px; // Moved the top and left to remove the extra whitespace around the image.
+		left: -30px;
+		background: url('img/circle.jpg') center/cover no-repeat; // The background takes an image, centers the image's position, the image's size covers the viewport, and the image does not repeat.
+		z-index: -1;
+		filter: blur(0px); // Blur effect.
+	}
+
+	// Percent number;
+	.loading-text {
+		color: white;
+		font-size: 50px;
+	}
+}

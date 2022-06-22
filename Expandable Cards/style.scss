@@ -27,15 +27,17 @@ body {
 
 		// Image panels
 		.panel {
+			position: relative;
 			height: 80vh;
 			margin: 10px;
 			color: white;
-			background-position: center; // Positions the image.
+			background-position: center;
 			background-repeat: no-repeat;
+			background-size: cover;
 			border-radius: 50px;
 			cursor: pointer;
 			transition: all 1s ease-out; // All transition properties will have a duration of 1 second, and transitions with a slow end.
-			flex-grow: 1; // All panels will take up 1 space in the flexbox container.
+			flex: 1; // All panels will take up 1 space in the flexbox container.
 
 			// Text
 			h3 {
@@ -49,7 +51,7 @@ body {
 
 		// Active image panel
 		.active {
-			flex-grow: 4; // The active panel will take up 4 spaces in the flexbox container.
+			flex: 4; // The active panel will take up 4 spaces in the flexbox container.
 
 			h3 {
 				opacity: 1; // Text is visible.
