@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$left-color: rgba(249, 239, 239, 0.7);
+$right-color: rgba(43, 43, 43, 0.7);
+$left-btn-color: rgba(249, 239, 239, 1);
+$right-btn-color: rgba(43, 43, 43, 1);
+
+// CSS Reset
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+
+	// Container
+	.container {
+		width: 100%;
+		height: 100%;
+		position: relative; // Needed to position .split absolute.
+
+		// iPhone and Galaxy containers
+		.split {
+			width: 50%;
+			height: 100%;
+			position: absolute; // Positioned within its parent element.
+			overflow: hidden; // Hides the rest off the image.
+
+			h1 {
+				position: absolute;
+				left: 50%;
+				top: 10%;
+				font-size: 4rem;
+				transform: translateX(-50%); // Used with left: 50% to horizontally center.
+				white-space: nowrap; // Text does not wrap.
+			}
+
+			.btn {
+				width: 15rem;
+				position: absolute;
+				left: 50%;
+				top: 40%;
+				padding: 1.5rem;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 1.2rem;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-decoration: none;
+				transform: translateX(-50%);
+			}
+		}
+
+		// iPhone container
+		.left {
+			left: 0;
+			background: url('img/iphone.jpg') center/cover no-repeat; // Takes an image, positions it in the center, has it cover the entire viewport, and does not repeat the image.
+
+			// iPhone container white overlay
+			&::before {
+				content: ''; // content must be included.
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				background: $left-color;
+			}
+
+			h1 {
+				color: black;
+			}
+
+			.btn {
+				color: black;
+				border: 0.2rem solid black;
+
+				&:hover {
+					background: $left-btn-color;
+					border-color: $left-btn-color;
+				}
+			}
+		}
+
+		// Galaxy container
+		.right {
+			right: 0;
+			background: url('img/galaxy.jpg') center/cover no-repeat;
+
+			// Galaxy continaer black overlay
+			&::before {
+				content: '';
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				background: $right-color;
+			}
+
+			h1 {
+				color: white;
+			}
+
+			.btn {
+				color: white;
+				border: 0.2rem solid white;
+
+				&:hover {
+					background: $right-btn-color;
+					border-color: $right-btn-color;
+				}
+			}
+		}
+	}
+
+	// Expands the iPhone container, and shrinks the Galaxy container
+	.hover-left {
+		.left {
+			width: 75%;
+		}
+		.right {
+			width: 25%;
+		}
+	}
+
+	// Shrinks the iPhone container, and expands the Galaxy container
+	.hover-right {
+		.left {
+			width: 25%;
+		}
+		.right {
+			width: 75%;
+		}
+	}
+}
+
+// Transition for expanding and shrinking iPhone/Galaxy containers
+.split.right,
+.split.right::before,
+.split.left,
+.split.left::before {
+	transition: width 1.1s ease-in-out; // The width properies have a 1.1 second duration with a fast start and end.
+}
+
+// Styling for smaller viewports
+@media (max-width: 1050px) {
+	body {
+		.container {
+			.split {
+				h1 {
+					font-size: 3.5rem;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 900px) {
+	body {
+		.container {
+			.split {
+				h1 {
+					font-size: 3rem;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 770px) {
+	body {
+		.container {
+			.split {
+				h1 {
+					font-size: 2.5rem;
+				}
+
+				.btn {
+					width: 12rem;
+					padding: 1.2rem;
+					font-size: 1rem;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 640px) {
+	body {
+		.container {
+			.split {
+				h1 {
+					font-size: 2rem;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 505px) {
+	body {
+		.container {
+			.split {
+				h1 {
+					font-size: 1.5rem;
+				}
+
+				.btn {
+					width: 10rem;
+					padding: 1rem;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 380px) {
+	body {
+		.container {
+			.split {
+				h1 {
+					font-size: 1rem;
+				}
+
+				.btn {
+					width: 8rem;
+					font-size: 0.8rem;
+				}
+			}
+		}
+	}
+}
