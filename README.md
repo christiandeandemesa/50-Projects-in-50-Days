@@ -21,3 +21,7 @@ https://user-images.githubusercontent.com/85912934/174947031-8a113b64-107e-4a3f-
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Scroll%20Animation' target='_blank' rel="noreferrer noopener">PROJECT 6: SCROLL ANIMATION</a>
 https://user-images.githubusercontent.com/85912934/175115661-cba8447f-f789-425f-ac14-9b10221f0a96.mp4
+
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Split%20Landing%20Page' target='_blank' rel="noreferrer noopener">PROJECT 7: SPLIT LANDING PAGE</a>
+https://user-images.githubusercontent.com/85912934/175341467-9198f451-42bf-474b-97d7-221d002308c9.mp4
+
