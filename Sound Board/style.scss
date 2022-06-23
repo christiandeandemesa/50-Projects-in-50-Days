@@ -41,6 +41,10 @@ body {
 			cursor: pointer;
 			transition: opacity 0.4s ease-in;
 
+			&:active {
+				transform: scale(0.98);
+			}
+
 			// Audio button hover effect
 			&:hover {
 				opacity: 0.7;

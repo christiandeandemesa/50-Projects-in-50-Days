@@ -41,6 +41,11 @@ body #buttons .btn {
   transition: opacity 0.4s ease-in;
 }
 
+body #buttons .btn:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
 body #buttons .btn:hover {
   opacity: 0.7;
 }
