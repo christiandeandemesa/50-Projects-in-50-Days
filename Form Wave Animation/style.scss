@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+// CSS Reset
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: steelblue;
+	color: white;
+	overflow: hidden;
+
+	// Container
+	.container {
+		padding: 20px 40px;
+		background: rgba(0, 0, 0, 0.4);
+		border-radius: 5px;
+
+		// Login text
+		h1 {
+			margin: 20px 0 50px; // 20px margin from the top, 0 margin for the right and left, and 50px margin from the bottom.
+			text-align: center;
+		}
+
+		// Form
+		form {
+			// Inputs
+			.form-control {
+				width: 300px;
+				position: relative;
+				margin: 20px 0 40px;
+
+				// Input fields
+				input {
+					width: 100%;
+					padding: 15px 0; // 15px padding from the top and bottom.
+					background: transparent; // Removes an input's field color.
+					color: white;
+					border: 0; // Removes an input field's border.
+					border-bottom: 2px solid white; // Adds a white bottom border.
+					outline: 0; // Removes an input field's border when clicked on.
+					font-size: 18px;
+
+					// When an input field is clicked on, or has valid content.
+					&:focus,
+					&:valid {
+						border-bottom-color: lightblue;
+
+						// Styles all the span child elements inside a label parent element that comes directly after an input:focus or input:valid element.
+						& + label span {
+							color: lightblue;
+							transform: translateY(-30px); // Moves each letter to the top by 30px.
+						}
+					}
+				}
+
+				// Input labels
+				label {
+					position: absolute; // Overlaps the label on top of the input field.
+					top: 15px;
+					left: 0;
+
+					span {
+						min-width: 5px;
+						display: inline-block; // Used inline-block instead of inline so we can use the below transition that affects the letters' heights.
+						font-size: 18px;
+						transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); // The & + label span transform property takes 0.3 seconds with the cubic-bezier animation.
+					}
+				}
+			}
+
+			// Login button
+			.btn {
+				width: 100%;
+				padding: 15px;
+				background: lightblue;
+				border: 0;
+				border-radius: 5px;
+				font-size: 16px;
+				cursor: pointer;
+
+				&:active {
+					transform: scale(0.98); // When the button is clicked, it shrinks.
+				}
+			}
+
+			// Register text
+			.text {
+				margin-top: 30px;
+
+				a {
+					color: lightblue;
+					text-decoration: none; // Removes the hyperlink underline.
+				}
+			}
+		}
+	}
+}

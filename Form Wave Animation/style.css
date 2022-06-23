@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: steelblue;
+  color: white;
+  overflow: hidden;
+}
+
+body .container {
+  padding: 20px 40px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+body .container h1 {
+  margin: 20px 0 50px;
+  text-align: center;
+}
+
+body .container form .form-control {
+  width: 300px;
+  position: relative;
+  margin: 20px 0 40px;
+}
+
+body .container form .form-control input {
+  width: 100%;
+  padding: 15px 0;
+  background: transparent;
+  color: white;
+  border: 0;
+  border-bottom: 2px solid white;
+  outline: 0;
+  font-size: 18px;
+}
+
+body .container form .form-control input:focus, body .container form .form-control input:valid {
+  border-bottom-color: lightblue;
+}
+
+body .container form .form-control input:focus + label span, body .container form .form-control input:valid + label span {
+  color: lightblue;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+
+body .container form .form-control label {
+  position: absolute;
+  top: 15px;
+  left: 0;
+}
+
+body .container form .form-control label span {
+  min-width: 5px;
+  display: inline-block;
+  font-size: 18px;
+  -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+body .container form .btn {
+  width: 100%;
+  padding: 15px;
+  background: lightblue;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body .container form .btn:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+body .container form .text {
+  margin-top: 30px;
+}
+
+body .container form .text a {
+  color: lightblue;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */
