@@ -1,4 +1,4 @@
-# Expandable Cards
+# Form Wave Animation
 
 Displays a form where the placeholder text jumps up when the input field is clicked on. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a 
 custom CSS reset, and animations.
