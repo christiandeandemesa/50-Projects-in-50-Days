@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$primary-color: #e66465;
+$secondary-color: #65e665;
+$btn-color: #65e6bb;
+$text-color: #e66590;
+
+// CSS Reset
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background: radial-gradient(ellipse at top, $primary-color, transparent),
+		radial-gradient(ellipse at bottom, $secondary-color, transparent); // Creates two backgrounds that blend into each other.
+	text-align: center;
+	overflow: hidden;
+
+	// Button container
+	#buttons {
+		// Audio button
+		.btn {
+			margin: 1rem;
+			padding: 1.5rem 3rem;
+			background: $btn-color;
+			color: $text-color;
+			border: none;
+			border-radius: 5px;
+			outline: none; // Removes the outline from the button while the audio is playing.
+			font-size: 1.2rem;
+			font-weight: bold;
+			text-transform: capitalize; // Styles the text since it comes from JavaScript instead of HTML.
+			cursor: pointer;
+			transition: opacity 0.4s ease-in;
+
+			// Audio button hover effect
+			&:hover {
+				opacity: 0.7;
+			}
+		}
+	}
+}

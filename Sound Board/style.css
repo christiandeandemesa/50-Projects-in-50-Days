@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: radial-gradient(ellipse at top, #e66465, transparent), radial-gradient(ellipse at bottom, #65e665, transparent);
+  text-align: center;
+  overflow: hidden;
+}
+
+body #buttons .btn {
+  margin: 1rem;
+  padding: 1.5rem 3rem;
+  background: #65e6bb;
+  color: #e66590;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  cursor: pointer;
+  -webkit-transition: opacity 0.4s ease-in;
+  transition: opacity 0.4s ease-in;
+}
+
+body #buttons .btn:hover {
+  opacity: 0.7;
+}
+/*# sourceMappingURL=style.css.map */
