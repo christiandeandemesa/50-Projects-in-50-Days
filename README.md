@@ -29,7 +29,10 @@ https://user-images.githubusercontent.com/85912934/175341467-9198f451-42bf-474b-
 https://user-images.githubusercontent.com/85912934/175375954-c32ccda0-1969-43c6-acf5-b6373484b84d.mp4
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Sound%20Board' target='_blank' rel="noreferrer noopener">PROJECT 9: SOUND BOARD</a>
-https://user-images.githubusercontent.com/85912934/175425142-ae9873ed-4b32-4a9a-aa55-625045c39008.mp4
+https://user-images.githubusercontent.com/85912934/175433386-270cab77-0f4d-4b59-8f8e-3705c0fe550e.mp4
+
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Dad%20Jokes' target='_blank' rel="noreferrer noopener">PROJECT 10: DAD JOKES</a>
+https://user-images.githubusercontent.com/85912934/175467400-670c2eb2-44cf-4035-ae65-582ef8fd70d6.mp4
 
 
 
