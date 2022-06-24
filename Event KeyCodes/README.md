@@ -1,4 +1,4 @@
-# Dad Jokes
+# Event KeyCodes
 
 Displays the key, keyCode, and code of any key pressed. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS reset.
 
