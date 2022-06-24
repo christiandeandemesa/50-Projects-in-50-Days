@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$rainbow: red, orange, yellow, green, blue, purple, red;
+
+// CSS Reset
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: conic-gradient($rainbow); // Rainbow swirl background.
+	overflow: hidden;
+
+	// Container
+	.container {
+		width: 800px;
+		max-width: 100%;
+		min-height: 500px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		padding: 50px 20px;
+		background: white;
+		color: black;
+		border-radius: 10px;
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+		text-align: center;
+
+		h3 {
+			font-size: 25px;
+			letter-spacing: 2px;
+		}
+
+		// API jokes
+		.joke {
+			max-width: 600px;
+			margin: 50px auto;
+			opacity: 0.5;
+			font-size: 30px;
+			font-weight: bold;
+			letter-spacing: 1px;
+			line-height: 40px;
+		}
+
+		// API joke button
+		.btn {
+			padding: 14px 40px;
+			background: black;
+			color: white;
+			border: 0;
+			border-radius: 10px;
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+			font-size: 16px;
+			cursor: pointer;
+
+			// Click effect
+			&:active {
+				transform: scale(0.98);
+			}
+
+			// Hover effect
+			&:hover {
+				background: linear-gradient(to right, $rainbow);
+				color: black;
+				font-weight: bold;
+				animation: slide 1.5s linear infinite;
+			}
+		}
+	}
+}
+
+// Animation
+@keyframes slide {
+	to {
+		background-position: 23vw;
+	}
+}
+
+// Styling for smaller sizes
+@media (max-width: 445px) {
+	body {
+		.container {
+			h3 {
+				font-size: 20px;
+			}
+
+			.joke {
+				font-size: 25px;
+			}
+		}
+	}
+}
+
+@media (max-width: 380px) {
+	body {
+		.container {
+			min-height: 400px;
+
+			h3 {
+				font-size: 15px;
+			}
+
+			.joke {
+				font-size: 20px;
+			}
+
+			.btn {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+@media (max-width: 315px) {
+	body {
+		.container {
+			.joke {
+				font-size: 15px;
+			}
+		}
+	}
+}

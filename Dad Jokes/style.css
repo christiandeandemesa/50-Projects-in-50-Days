@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: conic-gradient(red, orange, yellow, green, blue, purple, red);
+  overflow: hidden;
+}
+
+body .container {
+  width: 800px;
+  max-width: 100%;
+  min-height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 50px 20px;
+  background: white;
+  color: black;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+body .container h3 {
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+
+body .container .joke {
+  max-width: 600px;
+  margin: 50px auto;
+  opacity: 0.5;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  line-height: 40px;
+}
+
+body .container .btn {
+  padding: 14px 40px;
+  background: black;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body .container .btn:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+body .container .btn:hover {
+  background: -webkit-gradient(linear, left top, right top, from(red), color-stop(orange), color-stop(yellow), color-stop(green), color-stop(blue), color-stop(purple), to(red));
+  background: linear-gradient(to right, red, orange, yellow, green, blue, purple, red);
+  color: black;
+  font-weight: bold;
+  -webkit-animation: slide 1.5s linear infinite;
+          animation: slide 1.5s linear infinite;
+}
+
+@-webkit-keyframes slide {
+  to {
+    background-position: 23vw;
+  }
+}
+
+@keyframes slide {
+  to {
+    background-position: 23vw;
+  }
+}
+
+@media (max-width: 445px) {
+  body .container h3 {
+    font-size: 20px;
+  }
+  body .container .joke {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 380px) {
+  body .container {
+    min-height: 400px;
+  }
+  body .container h3 {
+    font-size: 15px;
+  }
+  body .container .joke {
+    font-size: 20px;
+  }
+  body .container .btn {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 315px) {
+  body .container .joke {
+    font-size: 15px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
