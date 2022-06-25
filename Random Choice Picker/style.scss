@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$bg-color: #f79500;
+$choice-color: #0062f5;
+$highlight-choice-color: #ffd28d;
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: $bg-color;
+	overflow: hidden;
+
+	// Container
+	.container {
+		min-height: 300px;
+		width: 600px;
+
+		// Instructions
+		h3 {
+			color: white;
+			margin: 10px 0 20px; // Top margin 0f 10px, no right and left margins, and bottom margin of 20px.
+		}
+
+		// Choice creating box
+		#textarea {
+			width: 100%;
+			height: 100px;
+			margin: 0 0 20px; // No top, right, and left margins, and bottom margin of 20px.
+			padding: 10px;
+			display: block; // Displays as a block element (e.g. <div>).
+			border: none;
+			font-size: 16px;
+		}
+
+		// Choices
+		#tags {
+			// Choice
+			.tag {
+				margin: 0 5px 10px 0; // No top and left margins, right margin of 5px, and bottom margin of 10px.
+				padding: 10px 20px; // Top and bottom padding of 10px, and right and left padding of 20px.
+				display: inline-block; // Displays similar to inline but you can change its width and height.
+				background: $choice-color;
+				color: white;
+				border-radius: 50px;
+				font-size: 14px;
+			}
+
+			.highlight {
+				background: $highlight-choice-color;
+			}
+		}
+	}
+}
