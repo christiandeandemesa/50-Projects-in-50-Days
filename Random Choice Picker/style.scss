@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-$bg-color: #f79500;
+$primary-color: #f79500;
+$secondary-color: #f75500;
 $choice-color: #0062f5;
 $highlight-choice-color: #ffd28d;
 
@@ -16,7 +17,12 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: $bg-color;
+	background: linear-gradient(
+		43deg,
+		$primary-color 0%,
+		$secondary-color 66%,
+		$highlight-choice-color 100%
+	);
 	overflow: hidden;
 
 	// Container
