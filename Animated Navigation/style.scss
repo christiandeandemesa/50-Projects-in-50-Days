@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$primary-color: #f4d03f;
+$secondary-color: #16a085;
+$tertiary-color: #5eaf6d;
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(
+		$primary-color 45%,
+		$secondary-color 55%,
+		$secondary-color 100%
+	); // The primary color stretches from 0% to 45%, the secondary color stretches from 55% to 100%, and there is a transition of colors between those two from 46% to 54%.
+	overflow: hidden;
+
+	// Closed navigation bar
+	nav {
+		width: 80px;
+		padding: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: white;
+		border-radius: 3px;
+		box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3); // Box-shadow does not move to the right, moves to the bottom 5px, has a 5px blur, and the given color.
+		transition: width 1s linear; // .active's width has 1 second duration with a consistent speed.
+
+		// Link container
+		ul {
+			width: 0;
+			display: flex;
+			list-style-type: none; // Removes the bullet points.
+			transition: width 1s linear; // .active ul's width has a 1 second duration with a consistent speed.
+
+			// Links
+			li {
+				opacity: 0; // Initially invisible.
+				transform: rotateY(0deg);
+				transition: opacity 0.3s linear, transform 1s linear; // .active ul li's opacity and transform have differing time durations, but both with a consistent speed.
+
+				// Hyperlinks
+				a {
+					position: relative;
+					margin: 0 10px; // No top and bottom margins, and right and left margin of 10px.
+					color: black;
+					text-decoration: none; // Removes the underline.
+
+					// Hover effect
+					&:hover {
+						color: $primary-color;
+					}
+				}
+
+				// Additional styling for even hyperlinks' hover effect
+				&:nth-child(even) {
+					a:hover {
+						color: $secondary-color;
+					}
+				}
+			}
+		}
+
+		// Button container
+		.icon {
+			width: 30px;
+			height: 30px;
+			position: relative; // Relative positioning to give children elements absolute positioning.
+			padding: 0;
+			background: white;
+			border: none;
+			cursor: pointer;
+
+			&:focus {
+				outline: none; // Removes button's outline when it is clicked on.
+			}
+
+			// Lines for hamburger and X icons
+			.line {
+				width: 20px;
+				height: 2px;
+				position: absolute;
+				top: 10px;
+				left: 5px;
+				background: $tertiary-color;
+				transition: transform 1s linear; // .active .icon .line's transform has a 1 second duration with a consistent speed.
+			}
+
+			// Additional styling for the bottom and top left line
+			.line2 {
+				top: auto; // Changes the top back to its default.
+				bottom: 10px; // Moves it 10px away from the bottom.
+			}
+		}
+	}
+
+	// Open navigation bar
+	.active {
+		width: 350px;
+
+		// Link container
+		ul {
+			width: 100%;
+
+			// Links
+			li {
+				opacity: 1;
+				transform: rotateY(360deg);
+				transition: opacity 0.3s linear 0.7s, transform 1s linear; // nav ul li's opacity and transform have differing time durations, both move at a consistent speed, and opacity has a time delay of 0.7 seconds.
+			}
+		}
+
+		// Button container
+		.icon {
+			// Top and top right line
+			.line1 {
+				transform: rotate(-765deg) translateY(5.5px); // Simultaneously rotates and translates.
+			}
+
+			// Bottom and top left line
+			.line2 {
+				transform: rotate(765deg) translateY(-5.5px);
+			}
+		}
+	}
+}
