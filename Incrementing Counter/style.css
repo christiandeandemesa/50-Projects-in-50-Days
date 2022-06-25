@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, right top, from(black), color-stop(#6d83d1), to(#da2266));
+  background: linear-gradient(to right, black, #6d83d1, #da2266);
+  color: white;
+}
+
+body .counter-container {
+  width: 33vw;
+  height: 100%;
+  margin: 30px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+}
+
+body .counter-container .counter {
+  margin-top: 10px;
+  font-size: 60px;
+}
+
+body .counter-container:nth-of-type(1) {
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(black), to(transparent));
+  background: linear-gradient(to right, transparent, black, transparent);
+}
+
+body .counter-container:nth-of-type(2) {
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#6d83d1), to(transparent));
+  background: linear-gradient(to right, transparent, #6d83d1, transparent);
+}
+
+body .counter-container:nth-of-type(3) {
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#da2266), to(transparent));
+  background: linear-gradient(to right, transparent, #da2266, transparent);
+}
+
+@media (max-width: 580px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background: -webkit-gradient(linear, left top, left bottom, from(black), color-stop(#6d83d1), to(#da2266));
+    background: linear-gradient(black, #6d83d1, #da2266);
+  }
+  body .counter-container {
+    width: 100vw;
+    height: 33%;
+  }
+  body .counter-container:nth-of-type(1) {
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(black), to(transparent));
+    background: linear-gradient(transparent, black, transparent);
+  }
+  body .counter-container:nth-of-type(2) {
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(#6d83d1), to(transparent));
+    background: linear-gradient(transparent, #6d83d1, transparent);
+  }
+  body .counter-container:nth-of-type(3) {
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(#da2266), to(transparent));
+    background: linear-gradient(transparent, #da2266, transparent);
+  }
+}
+/*# sourceMappingURL=style.css.map */
