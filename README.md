@@ -37,5 +37,8 @@ https://user-images.githubusercontent.com/85912934/175467400-670c2eb2-44cf-4035-
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Event%20KeyCodes' target='_blank' rel="noreferrer noopener">PROJECT 11: EVENT KEYCODES</a>
 https://user-images.githubusercontent.com/85912934/175662550-426a7986-d070-46ef-a0ec-496cf3223ad9.mp4
 
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/FAQ%20Collapse' target='_blank' rel="noreferrer noopener">PROJECT 12: FAQ COLLAPSE</a>
+https://user-images.githubusercontent.com/85912934/175751564-98367cac-e725-4fdf-bed1-206343bc48b3.mp4
+
 
 
