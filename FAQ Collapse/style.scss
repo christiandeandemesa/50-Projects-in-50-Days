@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$primary-color: #ffc0e5;
+$secondary-color: #4dff5b;
+$tertiary-color: #4db5ff;
+$btn-color: #9fa4a8;
+
+// CSS Reset
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: $primary-color;
+
+	// Title
+	h1 {
+		margin: 50px 0 30px; // Top margin of 50px, no left and right margins, and bottom margin of 30px.
+		text-align: center;
+	}
+
+	// Container
+	.faq-container {
+		max-width: 600px;
+		margin: 0 auto;
+
+		// Closed FAQ containers
+		.faq {
+			position: relative; // Needed to give children elements absolute positioning.
+			margin: 20px 0; // Top and bottom margins of 20px, and no left and right margins.
+			padding: 30px;
+			border: 1px solid $btn-color;
+			border-radius: 10px;
+			overflow: hidden;
+			transition: 0.3s ease; // The background-color takes 0.3 seconds to change with a slow start and end.
+
+			// Question
+			.faq-title {
+				margin: 0 35px 0 0; // No top, bottom, and left margins, and right margin of 35px.
+			}
+
+			// Answer
+			.faq-text {
+				display: none;
+				margin: 30px 0 0; // Top margin of 30px, and no right, left, and bottom margins.
+			}
+
+			// Button container
+			.faq-toggle {
+				width: 30px;
+				height: 30px;
+				position: absolute;
+				top: 30px;
+				right: 30px;
+				padding: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background: transparent;
+				border: 0;
+				border-radius: 50%;
+				cursor: pointer;
+
+				&:focus {
+					outline: none; // Removes the buttons' outline when clicked on.
+				}
+
+				// X button
+				.fa-times {
+					display: none;
+				}
+			}
+		}
+
+		// Open FAQ containers
+		.active {
+			background: white;
+			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1); // First value moves it to the right, second value moves it to the bottom, and the third value blurs it.
+
+			// Comment bubbles
+			&::before,
+			&::after {
+				// ::before adds content before it, and ::after adds content after it.
+				content: '\f075'; // Font Awesome icon unicode.
+				position: absolute;
+				top: 20px;
+				left: 360px;
+				color: $secondary-color;
+				opacity: 0.2;
+				font-family: 'Font Awesome 5 Free'; // Needed to display the Font Awesome icon.
+				font-size: 7rem;
+				z-index: 0;
+			}
+
+			// Additional styling for the blue comment bubble
+			&::before {
+				color: $tertiary-color;
+				top: -10px;
+				left: 310px;
+				transform: rotateY(180deg); // Flips the icon.
+			}
+
+			// Answer
+			.faq-text {
+				display: block;
+			}
+
+			// Button container
+			.faq-toggle {
+				background: $btn-color;
+				color: white;
+
+				// Down arrow button
+				.fa-chevron-down {
+					display: none;
+				}
+
+				// X button
+				.fa-times {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+// Styling for smaller screens.
+@media (max-width: 410px) {
+	body {
+		.faq-container {
+			.active {
+				&::before,
+				&::after {
+					top: 20px;
+					left: 300px;
+				}
+
+				&::before {
+					top: -10px;
+					left: 250px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 350px) {
+	body {
+		.faq-container {
+			.active {
+				&::before,
+				&::after {
+					top: 20px;
+					left: 250px;
+				}
+
+				&::before {
+					top: -10px;
+					left: 200px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 300px) {
+	body {
+		.faq-container {
+			.active {
+				&::before,
+				&::after {
+					top: 20px;
+					left: 150px;
+				}
+
+				&::before {
+					top: -10px;
+					left: 100px;
+				}
+			}
+		}
+	}
+}

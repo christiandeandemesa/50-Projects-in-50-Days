@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffc0e5;
+}
+
+body h1 {
+  margin: 50px 0 30px;
+  text-align: center;
+}
+
+body .faq-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+body .faq-container .faq {
+  position: relative;
+  margin: 20px 0;
+  padding: 30px;
+  border: 1px solid #9fa4a8;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+body .faq-container .faq .faq-title {
+  margin: 0 35px 0 0;
+}
+
+body .faq-container .faq .faq-text {
+  display: none;
+  margin: 30px 0 0;
+}
+
+body .faq-container .faq .faq-toggle {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: transparent;
+  border: 0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+body .faq-container .faq .faq-toggle:focus {
+  outline: none;
+}
+
+body .faq-container .faq .faq-toggle .fa-times {
+  display: none;
+}
+
+body .faq-container .active {
+  background: white;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+body .faq-container .active::before, body .faq-container .active::after {
+  content: '\f075';
+  position: absolute;
+  top: 20px;
+  left: 360px;
+  color: #4dff5b;
+  opacity: 0.2;
+  font-family: 'Font Awesome 5 Free';
+  font-size: 7rem;
+  z-index: 0;
+}
+
+body .faq-container .active::before {
+  color: #4db5ff;
+  top: -10px;
+  left: 310px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+body .faq-container .active .faq-text {
+  display: block;
+}
+
+body .faq-container .active .faq-toggle {
+  background: #9fa4a8;
+  color: white;
+}
+
+body .faq-container .active .faq-toggle .fa-chevron-down {
+  display: none;
+}
+
+body .faq-container .active .faq-toggle .fa-times {
+  display: block;
+}
+
+@media (max-width: 410px) {
+  body .faq-container .active::before, body .faq-container .active::after {
+    top: 20px;
+    left: 300px;
+  }
+  body .faq-container .active::before {
+    top: -10px;
+    left: 250px;
+  }
+}
+
+@media (max-width: 350px) {
+  body .faq-container .active::before, body .faq-container .active::after {
+    top: 20px;
+    left: 250px;
+  }
+  body .faq-container .active::before {
+    top: -10px;
+    left: 200px;
+  }
+}
+
+@media (max-width: 300px) {
+  body .faq-container .active::before, body .faq-container .active::after {
+    top: 20px;
+    left: 150px;
+  }
+  body .faq-container .active::before {
+    top: -10px;
+    left: 100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
