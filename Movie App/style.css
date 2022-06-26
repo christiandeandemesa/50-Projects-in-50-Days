@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #131313;
+  color: white;
+}
+
+body header {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #000000;
+}
+
+body header h1 {
+  margin-left: 5vw;
+  color: #e20101;
+}
+
+body header #form .search {
+  padding: 0.5rem 1rem;
+  border: 2px;
+  border-radius: 3px;
+  font-size: 1rem;
+}
+
+body header #form .search:focus {
+  outline: none;
+}
+
+body main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body main .movie {
+  position: relative;
+  width: 300px;
+  margin: 1rem;
+  background: #000000;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+body main .movie img {
+  width: 100%;
+}
+
+body main .movie .movie-info {
+  padding: 0.5rem 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.5px;
+}
+
+body main .movie .movie-info h3 {
+  margin-top: 0;
+}
+
+body main .movie .movie-info span {
+  padding: 0.25rem 0.5rem;
+  background: #131313;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+body main .movie .movie-info .green {
+  color: lightgreen;
+}
+
+body main .movie .movie-info .orange {
+  color: orange;
+}
+
+body main .movie .movie-info .red {
+  color: red;
+}
+
+body main .movie .overview {
+  position: absolute;
+  max-height: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  background: white;
+  color: #000000;
+  -webkit-transform: translateY(101%);
+          transform: translateY(101%);
+  -webkit-transition: -webkit-transform 0.6s ease;
+  transition: -webkit-transform 0.6s ease;
+  transition: transform 0.6s ease;
+  transition: transform 0.6s ease, -webkit-transform 0.6s ease;
+  overflow-y: scroll;
+}
+
+body main .movie .overview h3 {
+  color: #e20101;
+}
+
+body main .movie:hover .overview {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+@media (max-width: 430px) {
+  body header h1 {
+    font-size: 1.25rem;
+  }
+  body header #form .search {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 320px) {
+  body header h1 {
+    font-size: 1rem;
+  }
+  body header #form .search {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 270px) {
+  body header h1 {
+    display: none;
+  }
+  body header #form {
+    width: 80vw;
+    left: 50%;
+    -webkit-transform: translateX(5%);
+            transform: translateX(5%);
+  }
+  body header #form .search {
+    width: 100%;
+    font-size: 0.6rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */
