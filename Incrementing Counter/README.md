@@ -1,4 +1,4 @@
-# Animated Navigation
+# Incrementing Counter
 
 - Displays three numbers that increment from 0. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS reset, and Font Awesome icons.
 
