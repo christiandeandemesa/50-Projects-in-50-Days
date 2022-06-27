@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-position: center center;
+  background-size: cover;
+  overflow: hidden;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: -1;
+}
+
+body .slider-container {
+  position: relative;
+  width: 70vw;
+  height: 70vh;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  overflow: hidden;
+}
+
+body .slider-container .slide {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: -15vh;
+  left: -15vw;
+  opacity: 0;
+  background-position: center center;
+  background-size: cover;
+  z-index: 1;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+body .slider-container .active {
+  opacity: 1;
+}
+
+body .slider-container .arrow {
+  position: fixed;
+  top: 50%;
+  padding: 20px;
+  background: transparent;
+  color: white;
+  border: 2px solid purple;
+  font-size: 30px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+}
+
+body .slider-container .arrow:active {
+  color: purple;
+  border: 2px solid white;
+}
+
+body .slider-container .left-arrow {
+  left: calc(15vw - 65px);
+}
+
+body .slider-container .right-arrow {
+  right: calc(15vw - 65px);
+}
+/*# sourceMappingURL=style.css.map */

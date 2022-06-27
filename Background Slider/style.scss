@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-position: center center; // Separated out the background properties since using the shorthand will override the HTML inline styling.
+	background-size: cover;
+	overflow: hidden;
+	transition: 0.4s ease; // The big slide's background-image has a 0.4 second duration with a slow start and end.
+
+	// Big slide
+	&::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		top: 0;
+		left: 0;
+		background: rgba(0, 0, 0, 0.7);
+		z-index: -1; // Changed z-index to be behind the buttons.
+	}
+
+	// Small slides container
+	.slider-container {
+		position: relative; // Positioned relative so all children elements can be positioned absolute.
+		width: 70vw;
+		height: 70vh;
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+		overflow: hidden;
+
+		// Small slides
+		.slide {
+			position: absolute;
+			width: 100vw;
+			height: 100vh;
+			top: -15vh;
+			left: -15vw;
+			opacity: 0;
+			background-position: center center;
+			background-size: cover;
+			z-index: 1; // Changed z-index to above the buttons.
+			transition: 0.4s ease; // The small slide's background-image has a 0.4 second duration with a slow start and end.
+		}
+
+		// Current small slide
+		.active {
+			opacity: 1;
+		}
+
+		// Arrow buttons
+		.arrow {
+			position: fixed; // Positioned relative to the viewport regardless of scrolling.
+			top: 50%;
+			padding: 20px;
+			background: transparent;
+			color: white;
+			border: 2px solid purple;
+			font-size: 30px;
+			transform: translateY(-50%); // Used with the top property to center it vertically.
+			cursor: pointer;
+
+			// Click effect
+			&:active {
+				color: purple;
+				border: 2px solid white;
+			}
+		}
+
+		// Additional left arrow styling
+		.left-arrow {
+			left: calc(15vw - 65px);
+		}
+
+		// Additional right arrow styling
+		.right-arrow {
+			right: calc(15vw - 65px);
+		}
+	}
+}
