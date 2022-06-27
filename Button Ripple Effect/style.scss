@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+// CSS Reset
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: radial-gradient(ellipse at top left, #570860, transparent),
+		radial-gradient(ellipse at bottom right, #570860, transparent);
+	overflow: hidden;
+
+	// Click me button
+	button {
+		position: relative;
+		margin: 10px 0;
+		padding: 20px 30px;
+		background: black;
+		color: white;
+		border: 1px solid black;
+		border-radius: 5px;
+		box-shadow: 0 5px 10px rgba(0, 0, 255, 0.2);
+		font-size: 14px;
+		letter-spacing: 2px;
+		overflow: hidden;
+		cursor: pointer;
+
+		// White circle click effect
+		.circle {
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			background: white;
+			border-radius: 50%;
+			transform: translate(-50%, -50%) scale(0); // translate places the circle under the cursor, and scale causes the circle to expand.
+			animation: scale 0.5s ease-out; // scale animation has a 0.5 second duration with a slow end.
+		}
+	}
+}
+
+// Scale animation
+@keyframes scale {
+	to {
+		transform: translate(-50%, -50%) scale(2);
+		opacity: 0; // Causes the circle to fade.
+	}
+}
