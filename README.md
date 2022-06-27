@@ -55,3 +55,6 @@ https://user-images.githubusercontent.com/85912934/175796043-87c61a37-ddfc-47c1-
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Movie%20App' target='_blank' rel="noreferrer noopener">PROJECT 17: MOVIE APP</a>
 https://user-images.githubusercontent.com/85912934/175802319-247ffd11-e429-411e-b719-400b0a5f11c6.mp4
 
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Background%20Slider' target='_blank' rel="noreferrer noopener">PROJECT 18: BACKGROUND SLIDER</a>
+https://user-images.githubusercontent.com/85912934/175861349-9d3c6c07-e479-4e6b-9b6b-6dfabe422ba2.mp4
+
