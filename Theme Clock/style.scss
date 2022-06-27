@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$primary-color: rgb(30, 30, 30);
+$secondary-color: #e74c3c;
+
+// CSS Reset
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+// Light mode styling
+html {
+	// Background
+	body {
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		background: white;
+		color: $primary-color;
+		overflow: hidden;
+		transition: all 0.7s ease-in; // Every body property has a 0.7 second duration with a slow start.
+
+		// Dark mode button
+		.toggle {
+			padding: 8px 12px;
+			background: $primary-color;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+
+		// Clock, time, and date container
+		.clock-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+
+			// Clock container
+			.clock {
+				position: relative; // Positioned relative so all children elements can be positioned absolute.
+				width: 200px;
+				height: 200px;
+
+				// Hands
+				.needle {
+					position: absolute;
+					width: 3px;
+					height: 65px;
+					top: 50%;
+					left: 50%;
+					background: $primary-color;
+					transform-origin: bottom center; // Hands will rotate from their bottom in the center.
+					transform: translate(-50%, -100%) rotate(0deg); // translate() is used with top and left to center the hands, and rotate gives it a starting position.
+					transition: all 0.7s ease-in; // Every needle propery will have a 0.7 second duration with a slow start.
+				}
+
+				// Additional styling for minute hand
+				.minute {
+					height: 100px;
+				}
+
+				// Additional styling for second hand
+				.second {
+					height: 100px;
+					background: $secondary-color;
+				}
+
+				// Orange clock shaft
+				.center-point {
+					position: absolute;
+					width: 10px;
+					height: 10px;
+					top: 50%;
+					left: 50%;
+					background: $secondary-color;
+					border-radius: 50%;
+					transform: translate(-50%, -50%); // Used with top and left to center it.
+
+					// Black clock shaft
+					&::after {
+						content: '';
+						position: absolute;
+						width: 5px;
+						height: 5px;
+						top: 50%;
+						left: 50%;
+						background: $primary-color;
+						border-radius: 50%;
+						transform: translate(-50%, -50%); // Used with top and left to center it.
+						transition: all 0.7s ease-in; // Every center-point::after propery will have a 0.7 second duration with a slow start.
+					}
+				}
+			}
+
+			// Time
+			.time {
+				font-size: 60px;
+			}
+
+			// Date
+			.date {
+				color: $primary-color;
+				font-size: 14px;
+				letter-spacing: 0.3px;
+				text-transform: uppercase; // Sets it to uppercase since the date is modified with JavaScript.
+				transition: all 0.7s ease-in; // Every date property has a 0.7 second duration with a slow start.
+
+				// Current day
+				.circle {
+					width: 19px;
+					height: 19px;
+					display: inline-flex; // Creates a flex container that displays inline.
+					justify-content: center;
+					align-items: center;
+					background: $primary-color;
+					color: white;
+					border-radius: 50%;
+					font-size: 12px;
+					font-weight: bold;
+					line-height: 18px; // Vertical space between lines of text.
+					transition: all 0.7s ease-in; // Every circle property has a 0.7 second duration with a slow start.
+				}
+			}
+		}
+	}
+}
+
+// Dark mode styling
+.dark {
+	// Background
+	body {
+		background: $primary-color;
+		color: white;
+
+		// Light mode button
+		.toggle {
+			background: white;
+			color: $primary-color;
+		}
+
+		// Clock, time, and date container
+		.clock-container {
+			// Clock container
+			.clock {
+				// Hands
+				.needle {
+					background: white;
+				}
+
+				// Additional styling for second hand since the above styling overrides it
+				.second {
+					background: $secondary-color;
+				}
+
+				// White clock shaft
+				.center-point::after {
+					background: white;
+				}
+			}
+
+			// Date
+			.date {
+				color: white;
+
+				// Current day
+				.circle {
+					background: white;
+					color: $primary-color;
+				}
+			}
+		}
+	}
+}
+
+// Additional styling for smaller viewports
+@media (max-width: 275px) {
+	html {
+		body {
+			.clock-container {
+				.time {
+					font-size: 40px;
+				}
+			}
+		}
+	}
+}
