@@ -1,0 +1,76 @@
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: radial-gradient(circle, black, white 25%) center/cover no-repeat; // Background is centered in and covers the viewport, and does not repeat.
+
+	// Triangle container
+	.kinetic {
+		position: relative; // Positioned relative to absolutely position triangles.
+		width: 80px;
+		height: 80px;
+
+		// Triangles
+		&::before,
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			border: 50px solid transparent; // Hides the rest of the squares.
+			animation: rotateA 2s linear infinite 0.5s; // Animates using the rotateA animation with a duration of 2 seconds, with a consistent speed, and a delay of 0.5 seconds.
+		}
+
+		// Top and bottom triangle
+		&::before {
+			transform: rotate(90deg); // Starts at the 90 degree position.
+			animation: rotateB 2s linear infinite; // Animates using the rotateB animation with a duration of 2 seconds with a consistent speed.
+		}
+	}
+}
+
+// Left and right triangle animation
+@keyframes rotateA {
+	0%,
+	25% {
+		transform: rotate(0deg);
+		border-bottom-color: red;
+	}
+	50%,
+	75% {
+		transform: rotate(180deg);
+		border-bottom-color: green;
+	}
+	100% {
+		transform: rotate(360deg);
+		border-bottom-color: red;
+	}
+}
+
+// Top and bottom triangle animation
+@keyframes rotateB {
+	0%,
+	25% {
+		transform: rotate(90deg);
+		border-bottom-color: yellow;
+	}
+
+	50%,
+	75% {
+		transform: rotate(270deg);
+		border-bottom-color: blue;
+	}
+
+	100% {
+		transform: rotate(450deg);
+		border-bottom-color: yellow;
+	}
+}
