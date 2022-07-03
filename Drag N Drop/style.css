@@ -1,0 +1,80 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c80000), to(#ff9090));
+  background: linear-gradient(#c80000, #ff9090);
+  overflow: hidden;
+}
+
+body .empty {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  background: white;
+  border: 4px solid black;
+}
+
+body .empty .fill {
+  position: absolute;
+  width: 142px;
+  height: 142px;
+  top: 50%;
+  left: 50%;
+  background: url("https://source.unsplash.com/random/150x150");
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+body .empty .hold {
+  border: 3px solid white;
+}
+
+body .hovered {
+  background: #333;
+  border: 3px dashed white;
+}
+
+@media (max-width: 860px) {
+  body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 860px) and (max-height: 860px) {
+  body .empty:nth-of-type(5) {
+    display: none;
+  }
+}
+
+@media (max-height: 680px) and (max-width: 860px) {
+  body .empty:nth-of-type(4) {
+    display: none;
+  }
+}
+
+@media (max-height: 515px) and (max-width: 860px) {
+  body .empty:nth-of-type(3) {
+    display: none;
+  }
+}
+/*# sourceMappingURL=style.css.map */
