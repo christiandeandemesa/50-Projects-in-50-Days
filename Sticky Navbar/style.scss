@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$primary-color: #cb9d92;
+$secondary-color: #00a09e;
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	padding-bottom: 50px;
+
+	// Navbar
+	.nav {
+		position: fixed;
+		top: 0;
+		left: 0; // Used with right to stretch the navbar across the viewport.
+		right: 0;
+		background: $primary-color;
+		transition: all 0.3s ease-in-out; // All .nav properties have a 0.3 second duration with a slow start and end.
+
+		// Navbar container
+		.container {
+			padding: 20px 0;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			transition: padding 0.3s ease-in-out; // .container's padding has a 0.3 second duration with a slow start and end.
+
+			// Links
+			ul {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				list-style-type: none;
+			}
+		}
+	}
+
+	// Scrolled down navbar
+	.active {
+		background: $secondary-color;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3); // Adds a box shadow 0px to the right, 2px to the bottom, and a 10px blur.
+
+		// Scrolled down navbar container
+		.container {
+			padding: 5px 0;
+		}
+
+		// All scrolled down navbar links' hover effect
+		a:hover {
+			color: #ff9a9c;
+			transition: color 0.5s ease-in; // .active a:hover's color has a 0.5 second duration with a slow start.
+		}
+	}
+
+	// Sky picture
+	.sky {
+		position: relative; // Positioned relative to absolutely position .sky::before.
+		height: 100vh;
+		margin-bottom: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: url('img/sky.jpg') top center/cover no-repeat; // Background image is positioned to the top center, covers the viewport, and does not repeat.
+		color: white;
+		text-align: center;
+		z-index: -2; // Places the image behind the overlay.
+
+		// Overlay
+		&::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background: rgba(0, 0, 0, 0.2);
+			z-index: -1; // Places the overlay behind the text.
+		}
+
+		// Title
+		h1 {
+			margin: -20px 0 20px;
+			font-size: 46px;
+		}
+
+		// Subtitle
+		p {
+			font-size: 20px;
+			letter-spacing: 1px;
+		}
+	}
+
+	// Text container
+	.content {
+		// Text titles
+		h2,
+		h3 {
+			margin: 20px 0;
+			font-size: 150%;
+		}
+
+		// Text
+		p {
+			color: gray;
+			line-height: 30px;
+			letter-spacing: 1px;
+		}
+	}
+}
+
+// Navbar, sky picture, and text containers
+.container {
+	max-width: 1200px;
+	margin: 0 auto; // Horizontally centers the contents.
+}
+
+// All navbar links
+.nav a {
+	padding: 7px 15px; // Top and bottom padding of 7px, and right and left padding of 15px.
+	color: white;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out; // All .nav a properties have a 0.3 second duration with a slow start and end.
+
+	// All navbar links' hover effect
+	&:hover {
+		color: #a8ccd5;
+		transition: color 0.5s ease-in; // .nav a:hover's color has a 0.5 second duration with a slow start.
+	}
+}
