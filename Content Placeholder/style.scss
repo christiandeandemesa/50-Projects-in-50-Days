@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$primary-color: #777;
+
+// CSS Reset
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: linear-gradient(to right, black 0%, #0cea77 10%, black 20%);
+	background-size: 200% 100%; // Background has a width of 200% and a height of 100%.
+	animation: bgPos 1s linear infinite; // animation uses bgPos with a 1 second duration with a consistent speed.
+	overflow: hidden;
+
+	// Card container
+	.card {
+		width: 350px;
+		height: 425px;
+		border-radius: 10px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+		overflow: hidden;
+
+		// Car picture container
+		.card-header {
+			height: 227px;
+
+			// Car picture
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover; // Image is clipped to fit.
+			}
+		}
+
+		// Text container
+		.card-content {
+			padding: 30px;
+			background: white;
+
+			// Title
+			.card-title {
+				height: 20px;
+			}
+
+			// Text
+			.card-excerpt {
+				margin: 10px 0 20px;
+				color: $primary-color;
+			}
+
+			// Author container
+			.author {
+				display: flex;
+
+				// Profile icon
+				.profile-img {
+					width: 40px;
+					height: 40px;
+					border-radius: 50%;
+					overflow: hidden;
+				}
+
+				// Author text container
+				.author-info {
+					width: 150px;
+					margin-left: 10px;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-around;
+
+					// Date
+					small {
+						margin-top: 5px;
+						color: $primary-color;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Images
+img {
+	max-width: 100%;
+}
+
+// Gray lines behind images
+.animated-bg {
+	background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 10%, #f6f7f8 20%);
+	background-size: 200% 100%; // Background has a width of 200% and a height of 100%.
+	animation: bgPos 1s linear infinite; // animation uses bgPos with a 1 second duration with a consistent speed.
+}
+
+// Gray lines behind text
+.animated-bg-text {
+	width: 100%;
+	height: 10px;
+	margin: 0;
+	display: inline-block; // Displays inline but you can change its height.
+	border-radius: 50px;
+}
+
+// Lines animation
+@keyframes bgPos {
+	0% {
+		background-position: 50% 0;
+	}
+	100% {
+		background-position: -150% 0; // -100% will move the lines to the end of the container, but increasing it to -150% will make the lines move quickly.
+	}
+}
