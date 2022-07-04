@@ -67,3 +67,17 @@ https://user-images.githubusercontent.com/85912934/176041420-2694b8ab-e5ec-413b-
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Drag%20N%20Drop' target='_blank' rel="noreferrer noopener">PROJECT 21: DRAG N DROP</a>
 https://user-images.githubusercontent.com/85912934/177027845-7f946071-8b71-4f0c-812f-f59da759242f.mp4
 
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Drawing%20App' target='_blank' rel="noreferrer noopener">PROJECT 22: DRAWING APP</a>
+https://user-images.githubusercontent.com/85912934/177207982-86ee91dc-439f-47ab-920d-a43ac9f5761b.mp4
+
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Kinetic%20CSS%20Loader' target='_blank' rel="noreferrer noopener">PROJECT 23: KINETIC CSS LOADER</a>
+https://user-images.githubusercontent.com/85912934/177208078-c1593f69-ddab-4b7a-8b5d-071fa26a537d.mp4
+
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Content%20Placeholder' target='_blank' rel="noreferrer noopener">PROJECT 24: CONTENT PLACEHOLDER</a>
+https://user-images.githubusercontent.com/85912934/177208128-520a05c9-f840-4647-9cd7-a7a8174f72da.mp4
+
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Sticky%20Navbar' target='_blank' rel="noreferrer noopener">PROJECT 25: STICKY NAVBAR</a>
+https://user-images.githubusercontent.com/85912934/177208182-34e2e136-8cf3-4d4d-8fa8-bb1288ad6b0d.mp4
+
+
+
