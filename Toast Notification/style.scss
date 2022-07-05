@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(240deg, #66086e 30%, #32086e 70%, #20086e);
+	overflow: hidden;
+
+	// Toast notification container
+	#toasts {
+		position: fixed; // Fixed position to a specific area in the viewport.
+		bottom: 10px;
+		right: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+
+		// Toast notifications
+		.toast {
+			margin: 0.5rem;
+			padding: 1rem 2rem; // Top and bottom padding of 1rem, and right and left padding of 2rem;
+			background: white;
+			color: rebeccapurple;
+			border-radius: 5px;
+		}
+	}
+
+	// Input field
+	.text {
+		margin: 1rem;
+		padding: 0.5rem;
+		color: rebeccapurple;
+		font-weight: bold;
+
+		// Input field clicked on event
+		&:focus {
+			outline: none;
+		}
+	}
+
+	// Notification button
+	.btn {
+		padding: 1rem 1.3rem; // Top and bottom padding of 1rem, and right and left padding of 1.3rem.
+		background: white;
+		color: rebeccapurple;
+		border: none;
+		border-radius: 5px;
+		font-size: 1rem;
+		font-weight: bold;
+		cursor: pointer;
+
+		// Notification button click event
+		&:active {
+			transform: scale(0.98);
+		}
+	}
+}
