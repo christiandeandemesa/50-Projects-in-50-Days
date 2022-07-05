@@ -15,5 +15,4 @@
     Duo, iPad Mini, iPad Air, Surface Pro 7, Nesthub, and Nesthub Max in portrait and landscape sizes, and most standard laptops.
 
 ## Author
-
 -   Christian Demesa: https://github.com/christiandeandemesa
