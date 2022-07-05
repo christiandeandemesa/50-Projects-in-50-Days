@@ -82,5 +82,7 @@ https://user-images.githubusercontent.com/85912934/177208182-34e2e136-8cf3-4d4d-
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Double%20Vertical%20Slider' target='_blank' rel="noreferrer noopener">PROJECT 26: DOUBLE VERTICAL SLIDER</a>
 https://user-images.githubusercontent.com/85912934/177258206-ee453d43-e4c9-408d-a0d8-acb6d278e248.mp4
 
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Toast%20Notification' target='_blank' rel="noreferrer noopener">PROJECT 27: TOAST NOTIFICATION</a>
+https://user-images.githubusercontent.com/85912934/177408041-c70177d6-b2bd-4b4c-9ab2-794fc51f81ad.mp4
 
 
