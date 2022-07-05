@@ -79,5 +79,8 @@ https://user-images.githubusercontent.com/85912934/177208128-520a05c9-f840-4647-
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Sticky%20Navbar' target='_blank' rel="noreferrer noopener">PROJECT 25: STICKY NAVBAR</a>
 https://user-images.githubusercontent.com/85912934/177208182-34e2e136-8cf3-4d4d-8fa8-bb1288ad6b0d.mp4
 
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Double%20Vertical%20Slider' target='_blank' rel="noreferrer noopener">PROJECT 26: DOUBLE VERTICAL SLIDER</a>
+https://user-images.githubusercontent.com/85912934/177258206-ee453d43-e4c9-408d-a0d8-acb6d278e248.mp4
+
 
 
