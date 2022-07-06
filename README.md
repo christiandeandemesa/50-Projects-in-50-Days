@@ -96,3 +96,9 @@ https://user-images.githubusercontent.com/85912934/177457660-d5c3dbd5-844f-41c9-
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Password%20Generator' target='_blank' rel="noreferrer noopener">PROJECT 31: PASSWORD GENERATOR</a>
 https://user-images.githubusercontent.com/85912934/177480799-01db87ed-a014-45f8-85d2-5c7f8b451d20.mp4
+
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/GCF%20Checkboxes' target='_blank' rel="noreferrer noopener">PROJECT 32: GOOD, CHEAP, FAST CHECKBOXES</a>
+https://user-images.githubusercontent.com/85912934/177636098-9a1616cc-b7e2-4216-977f-1bbb7d5f9282.mp4
+
+
+
