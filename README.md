@@ -94,3 +94,5 @@ https://user-images.githubusercontent.com/85912934/177453460-f2c7131b-4847-4ed9-
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Auto%20Text%20Effect' target='_blank' rel="noreferrer noopener">PROJECT 30: AUTO TEXT EFFECT</a>
 https://user-images.githubusercontent.com/85912934/177457660-d5c3dbd5-844f-41c9-8cb8-b6f66eff8244.mp4
 
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Password%20Generator' target='_blank' rel="noreferrer noopener">PROJECT 31: PASSWORD GENERATOR</a>
+https://user-images.githubusercontent.com/85912934/177480799-01db87ed-a014-45f8-85d2-5c7f8b451d20.mp4
