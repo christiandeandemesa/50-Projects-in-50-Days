@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+  overflow: hidden;
+  -webkit-transition: background-color 0.8s ease-out;
+  transition: background-color 0.8s ease-out;
+}
+
+body .toggle-container {
+  width: 200px;
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .toggle-container .toggle {
+  visibility: hidden;
+}
+
+body .toggle-container .toggle:checked + #good-label {
+  background: red;
+}
+
+body .toggle-container .toggle:checked + #cheap-label {
+  background: yellow;
+}
+
+body .toggle-container .toggle:checked + #fast-label {
+  background: blue;
+}
+
+body .toggle-container .toggle:checked + .label .ball {
+  -webkit-animation: slideOn 0.3s linear;
+          animation: slideOn 0.3s linear;
+}
+
+body .toggle-container .label {
+  position: relative;
+  width: 80px;
+  height: 40px;
+  margin: 0 15px 0;
+  display: inline-block;
+  background: #d0d0d0;
+  border: 3px solid #d0d0d0;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+body .toggle-container .label .ball {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  background: white;
+  border-radius: 50%;
+  -webkit-animation: slideOff 0.3s linear;
+          animation: slideOff 0.3s linear;
+}
+
+@-webkit-keyframes slideOn {
+  0% {
+    -webkit-transform: translateX(0) scale(1);
+            transform: translateX(0) scale(1);
+  }
+  50% {
+    -webkit-transform: translateX(20px) scale(1.1);
+            transform: translateX(20px) scale(1.1);
+  }
+  100% {
+    -webkit-transform: translateX(40px) scale(1);
+            transform: translateX(40px) scale(1);
+  }
+}
+
+@keyframes slideOn {
+  0% {
+    -webkit-transform: translateX(0) scale(1);
+            transform: translateX(0) scale(1);
+  }
+  50% {
+    -webkit-transform: translateX(20px) scale(1.1);
+            transform: translateX(20px) scale(1.1);
+  }
+  100% {
+    -webkit-transform: translateX(40px) scale(1);
+            transform: translateX(40px) scale(1);
+  }
+}
+
+@-webkit-keyframes slideOff {
+  0% {
+    -webkit-transform: translateX(40px) scale(1);
+            transform: translateX(40px) scale(1);
+  }
+  50% {
+    -webkit-transform: translateX(20px) scale(1.1);
+            transform: translateX(20px) scale(1.1);
+  }
+  100% {
+    -webkit-transform: translateX(0) scale(1);
+            transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes slideOff {
+  0% {
+    -webkit-transform: translateX(40px) scale(1);
+            transform: translateX(40px) scale(1);
+  }
+  50% {
+    -webkit-transform: translateX(20px) scale(1.1);
+            transform: translateX(20px) scale(1.1);
+  }
+  100% {
+    -webkit-transform: translateX(0) scale(1);
+            transform: translateX(0) scale(1);
+  }
+}
+/*# sourceMappingURL=style.css.map */

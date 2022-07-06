@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>GCF Checkboxes</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h2>How do you want your project to be?</h2>
+
+		<!--Good toggle-->
+		<div class="toggle-container">
+			<!--Hidden checkbox-->
+			<input type="checkbox" class="toggle" id="good" />
+
+			<!--Toggle bar-->
+			<label for="good" class="label" id="good-label">
+				<!--Ball inside toggle bar-->
+				<div class="ball"></div>
+			</label>
+
+			<!--Label-->
+			<span>Good</span>
+		</div>
+
+		<!--Cheap toggle-->
+		<div class="toggle-container">
+			<input type="checkbox" class="toggle" id="cheap" />
+			<label for="cheap" class="label" id="cheap-label">
+				<div class="ball"></div>
+			</label>
+			<span>Cheap</span>
+		</div>
+
+		<!--Fast toggle-->
+		<div class="toggle-container">
+			<input type="checkbox" class="toggle" id="fast" />
+			<label for="fast" class="label" id="fast-label">
+				<div class="ball"></div>
+			</label>
+			<span>Fast</span>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>

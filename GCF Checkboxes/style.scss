@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$gray: #d0d0d0;
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+	overflow: hidden;
+	transition: background-color 0.8s ease-out;
+
+	// Project toggles
+	.toggle-container {
+		width: 200px;
+		margin: 10px 0;
+		display: flex;
+		align-items: center;
+
+		// Hidden checkboxes
+		.toggle {
+			visibility: hidden; // Hides the checkbox
+
+			// When the checkbox is checked
+			&:checked {
+				// Good toggle bar when the checkbox is checked
+				& + #good-label {
+					background: red;
+				}
+
+				// Cheap toggle bar when the checkbox is checked
+				& + #cheap-label {
+					background: yellow;
+				}
+
+				// Fast toggle bar when the checkbox is checked
+				& + #fast-label {
+					background: blue;
+				}
+
+				// All the balls inside the toggle bars when the checkbox is checked
+				& + .label .ball {
+					animation: slideOn 0.3s linear;
+				}
+			}
+		}
+
+		// Toggle bars
+		.label {
+			position: relative;
+			width: 80px;
+			height: 40px;
+			margin: 0 15px 0;
+			display: inline-block; // Displays inline but can be given width and height.
+			background: $gray;
+			border: 3px solid $gray;
+			border-radius: 50px;
+			cursor: pointer;
+
+			// Balls inside the toggle bars
+			.ball {
+				position: absolute;
+				width: 34px;
+				height: 34px;
+				background: white;
+				border-radius: 50%;
+				animation: slideOff 0.3s linear;
+			}
+		}
+	}
+}
+
+// Slide to right animation
+@keyframes slideOn {
+	0% {
+		transform: translateX(0) scale(1);
+	}
+	50% {
+		transform: translateX(20px) scale(1.1);
+	}
+	100% {
+		transform: translateX(40px) scale(1);
+	}
+}
+
+// Slide to left animation
+@keyframes slideOff {
+	0% {
+		transform: translateX(40px) scale(1);
+	}
+	50% {
+		transform: translateX(20px) scale(1.1);
+	}
+	100% {
+		transform: translateX(0) scale(1);
+	}
+}
