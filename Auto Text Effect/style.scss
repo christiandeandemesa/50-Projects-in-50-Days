@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	background: url('img/typewriter.jpg') center/cover no-repeat; // Background is an image positioned in the center, covers the viewport, and does not repeat.
+	overflow: hidden;
+
+	// Text
+	#text {
+		margin-right: 40%;
+		margin-left: 5%;
+	}
+
+	// Speed container
+	div {
+		position: absolute;
+		bottom: 20px;
+		padding: 10px 20px;
+		background: rgba(0, 0, 0, 0.5);
+		font-size: 18px;
+
+		// Speed number
+		input {
+			width: 50px;
+			padding: 5px;
+			border: none;
+			font-size: 18px;
+			text-align: center;
+
+			// Speed number clicked on effect
+			&:focus {
+				outline: none;
+			}
+		}
+	}
+}
