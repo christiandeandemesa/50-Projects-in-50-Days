@@ -91,3 +91,6 @@ https://user-images.githubusercontent.com/85912934/177441996-8a78ae99-4ab0-46f8-
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Double%20Heart%20Click' target='_blank' rel="noreferrer noopener">PROJECT 29: DOUBLE HEART CLICK</a>
 https://user-images.githubusercontent.com/85912934/177453460-f2c7131b-4847-4ed9-865d-28f9af6d00d6.mp4
 
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Auto%20Text%20Effect' target='_blank' rel="noreferrer noopener">PROJECT 30: AUTO TEXT EFFECT</a>
+https://user-images.githubusercontent.com/85912934/177457660-d5c3dbd5-844f-41c9-8cb8-b6f66eff8244.mp4
+
