@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$github-blue: #212a72;
+$github-white: #f0f6fc;
+$box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(0, 0, 0, 0.1);
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #010409;
+
+	// Input form
+	.user-form {
+		width: 100%;
+		max-width: 700px;
+
+		// Input field
+		input {
+			width: 100%;
+			margin-bottom: 2rem;
+			padding: 1rem;
+			display: block; // Displays similar to a div element.
+			background: $github-blue;
+			border: none;
+			border-radius: 10px;
+			font-size: 1rem;
+			font-weight: bold;
+			box-shadow: $box-shadow;
+
+			// Input field clicked on event
+			&:focus {
+				background: $github-white;
+				color: $github-blue;
+				outline: none;
+			}
+
+			// Additional input field placeholder styling
+			&::placeholder {
+				color: $github-white;
+				font-weight: bold;
+			}
+		}
+	}
+
+	// Card container
+	main {
+		//Card
+		.card {
+			width: 700px;
+			margin: 0 1.5rem; // No top and bottom margins, and right and left margin of 1.5rem.
+			padding: 3rem;
+			display: flex;
+			background: linear-gradient(140deg, #93f5ec, #a77bf3 60%);
+			border-radius: 20px;
+			box-shadow: $box-shadow;
+
+			// Profile container
+			div {
+				// Profile image
+				.avatar {
+					width: 150px;
+					height: 150px;
+					border: 10px solid #2a2a72;
+					border-radius: 50%;
+				}
+			}
+
+			// Info container
+			.user-info {
+				margin-left: 2rem;
+				display: flex;
+				flex-direction: column;
+				color: $github-white;
+
+				// Name
+				h2 {
+					margin-bottom: 10px;
+				}
+
+				// Bio
+				p {
+					margin-bottom: 10px;
+				}
+
+				// Statistics container
+				ul {
+					width: 400px;
+					margin-bottom: 10px;
+					display: flex;
+					justify-content: space-between;
+					flex-wrap: wrap;
+					list-style-type: none;
+
+					// Statistics
+					li {
+						display: flex;
+						align-items: center;
+
+						// Statistics text
+						strong {
+							margin-left: 0.5rem;
+							font-size: 0.9rem;
+						}
+					}
+				}
+
+				// Repositories container
+				#repos {
+					display: flex;
+					flex-wrap: wrap;
+
+					// Repository links
+					.repo {
+						margin-right: 0.5rem;
+						margin-bottom: 0.5rem;
+						padding: 0.25rem 0.5rem; // Top and bottom padding of 0.25rem, and right and left padding of 0.5rem.
+						background: $github-blue;
+						color: $github-white;
+						font-size: 0.7rem;
+						text-decoration: none;
+						white-space: wrap;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Styling for smaller viewports
+@media (max-width: 670px) {
+	body {
+		.user-form {
+			max-width: 570px;
+		}
+
+		main {
+			.card {
+				flex-direction: column;
+				align-items: center;
+			}
+		}
+	}
+}
