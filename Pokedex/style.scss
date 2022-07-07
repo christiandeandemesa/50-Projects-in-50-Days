@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url('poke-cards.jpg') center/contain;
+
+	// Pokedex
+	h1 {
+		margin-top: 10px;
+		padding: 5px 10px;
+		background: rgba(0, 0, 0, 0.5);
+		color: white;
+		border-radius: 5px;
+		letter-spacing: 3px;
+	}
+
+	// Pokemon cards container
+	.poke-container {
+		max-width: 1200px;
+		margin: 0 auto; // Right and left margin of auto horizontally centers it.
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+
+		// Pokemon card
+		.pokemon {
+			margin: 10px;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 10px 5px rgba(0, 0, 0, 0.5);
+			text-align: center;
+
+			// Image circle
+			.img-container {
+				width: 120px;
+				height: 120px;
+				background: rgba(255, 255, 255, 0.6);
+				border-radius: 50%;
+				text-align: center;
+
+				// Pokemon image
+				img {
+					max-width: 90%;
+					margin-top: 10px;
+				}
+			}
+
+			// Info container
+			.info {
+				margin-top: 20px;
+
+				// Pokemon ID
+				.number {
+					padding: 5px 10px;
+					background: rgba(0, 0, 0, 0.1);
+					border-radius: 10px;
+					font-size: 0.8em;
+				}
+
+				// Pokemon name
+				.name {
+					margin: 15px 0 7px;
+					letter-spacing: 1px;
+				}
+			}
+		}
+	}
+}
