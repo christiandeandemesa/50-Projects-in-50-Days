@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$primary-color: #00cf00;
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	background: radial-gradient(circle at top, #d10000, transparent 100%),
+		radial-gradient(ellipse at bottom left, #00d1d1, transparent 100%),
+		radial-gradient(ellipse at bottom right, #d100d1, transparent 100%);
+	overflow: hidden;
+
+	// Number countdown container
+	.counter {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		text-align: center;
+		transform: translate(-50%, -50%); // With top and left, it centers the element's contents.
+
+		// Number countdown container after the animation ends
+		&.hide {
+			transform: translate(-50%, -50%) scale(0);
+			animation: hide 0.1s ease-out; // The hide animation has a 0.1 second duration with a slow end.
+		}
+
+		// Numbers container
+		.nums {
+			width: 250px;
+			height: 60px;
+			position: relative; // Positioned relative so children elements can be positioned absolute.
+			color: $primary-color;
+			font-size: 60px;
+			overflow: hidden;
+
+			// Numbers
+			span {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%) rotate(120deg);
+				transform-origin: bottom center; // Rotates from the bottom center of the numbers.
+			}
+
+			// Additional styling when the number has to be in view
+			.in {
+				transform: translate(-50%, -50%) rotate(0deg);
+				animation: goIn 0.5s ease-in-out; // The goIn animation has a 0.5 second duration with a slow start and end.
+			}
+
+			// Additional styling when the number has to be out of view
+			.out {
+				animation: goOut 0.5s ease-in-out; // The goOut animation has a 0.5 second duration with a slow start and end.
+			}
+		}
+
+		// Get ready text
+		h4 {
+			margin: 5px;
+			color: white;
+			font-size: 20px;
+		}
+	}
+
+	// Replay button container
+	.final {
+		position: fixed;
+		top: 50%;
+		left: 50%;
+		text-align: center;
+		transform: translate(-50%, -50%) scale(0);
+
+		// Replay button container after the animation ends
+		&.show {
+			transform: translate(-50%, -50%) scale(1);
+			animation: show 0.5s ease-in; // The show animation has a 0.5 second duration with a slow start.
+		}
+
+		// Go text
+		h1 {
+			margin: 5px;
+			color: white;
+			font-size: 30px;
+		}
+
+		// Replay button
+		#replay {
+			margin-top: 10px;
+			padding: 5px 10px;
+			background: $primary-color;
+			border: none;
+			font-size: 20px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+	}
+}
+
+// Shrink animation
+@keyframes hide {
+	0% {
+		transform: translate(-50%, -50%) scale(1);
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(0);
+	}
+}
+
+// Expand animation
+@keyframes show {
+	0% {
+		transform: translate(-50%, -50%) scale(0);
+	}
+	80% {
+		transform: translate(-50%, -50%) scale(1.2);
+	}
+	100% {
+		transform: translate(-50%, -50%) scale(1);
+	}
+}
+
+// Rotate in animation
+@keyframes goIn {
+	0% {
+		transform: translate(-50%, -50%) rotate(120deg);
+	}
+	30% {
+		transform: translate(-50%, -50%) rotate(-20deg);
+	}
+	60% {
+		transform: translate(-50%, -50%) rotate(10deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+}
+
+// Rotate out animation
+@keyframes goOut {
+	0% {
+		transform: translate(-50%, -50%) rotate(0deg);
+	}
+	60% {
+		transform: translate(-50%, -50%) rotate(20deg);
+	}
+	100% {
+		transform: translate(-50%, -50%) rotate(-120deg);
+	}
+}

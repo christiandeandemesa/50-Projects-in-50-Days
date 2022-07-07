@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: radial-gradient(circle at top, #d10000, transparent 100%), radial-gradient(ellipse at bottom left, #00d1d1, transparent 100%), radial-gradient(ellipse at bottom right, #d100d1, transparent 100%);
+  overflow: hidden;
+}
+
+body .counter {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .counter.hide {
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+  -webkit-animation: hide 0.1s ease-out;
+          animation: hide 0.1s ease-out;
+}
+
+body .counter .nums {
+  width: 250px;
+  height: 60px;
+  position: relative;
+  color: #00cf00;
+  font-size: 60px;
+  overflow: hidden;
+}
+
+body .counter .nums span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(120deg);
+          transform: translate(-50%, -50%) rotate(120deg);
+  -webkit-transform-origin: bottom center;
+          transform-origin: bottom center;
+}
+
+body .counter .nums .in {
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+          transform: translate(-50%, -50%) rotate(0deg);
+  -webkit-animation: goIn 0.5s ease-in-out;
+          animation: goIn 0.5s ease-in-out;
+}
+
+body .counter .nums .out {
+  -webkit-animation: goOut 0.5s ease-in-out;
+          animation: goOut 0.5s ease-in-out;
+}
+
+body .counter h4 {
+  margin: 5px;
+  color: white;
+  font-size: 20px;
+}
+
+body .final {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+
+body .final.show {
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-animation: show 0.5s ease-in;
+          animation: show 0.5s ease-in;
+}
+
+body .final h1 {
+  margin: 5px;
+  color: white;
+  font-size: 30px;
+}
+
+body .final #replay {
+  margin-top: 10px;
+  padding: 5px 10px;
+  background: #00cf00;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@-webkit-keyframes hide {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+@keyframes hide {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+  }
+}
+
+@-webkit-keyframes show {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+  }
+  80% {
+    -webkit-transform: translate(-50%, -50%) scale(1.2);
+            transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes show {
+  0% {
+    -webkit-transform: translate(-50%, -50%) scale(0);
+            transform: translate(-50%, -50%) scale(0);
+  }
+  80% {
+    -webkit-transform: translate(-50%, -50%) scale(1.2);
+            transform: translate(-50%, -50%) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@-webkit-keyframes goIn {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(120deg);
+            transform: translate(-50%, -50%) rotate(120deg);
+  }
+  30% {
+    -webkit-transform: translate(-50%, -50%) rotate(-20deg);
+            transform: translate(-50%, -50%) rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: translate(-50%, -50%) rotate(10deg);
+            transform: translate(-50%, -50%) rotate(10deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+@keyframes goIn {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(120deg);
+            transform: translate(-50%, -50%) rotate(120deg);
+  }
+  30% {
+    -webkit-transform: translate(-50%, -50%) rotate(-20deg);
+            transform: translate(-50%, -50%) rotate(-20deg);
+  }
+  60% {
+    -webkit-transform: translate(-50%, -50%) rotate(10deg);
+            transform: translate(-50%, -50%) rotate(10deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+}
+
+@-webkit-keyframes goOut {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  60% {
+    -webkit-transform: translate(-50%, -50%) rotate(20deg);
+            transform: translate(-50%, -50%) rotate(20deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-120deg);
+            transform: translate(-50%, -50%) rotate(-120deg);
+  }
+}
+
+@keyframes goOut {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+            transform: translate(-50%, -50%) rotate(0deg);
+  }
+  60% {
+    -webkit-transform: translate(-50%, -50%) rotate(20deg);
+            transform: translate(-50%, -50%) rotate(20deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(-120deg);
+            transform: translate(-50%, -50%) rotate(-120deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
