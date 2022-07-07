@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to right, rebeccapurple, green, rebeccapurple);
+
+	// Carousel container
+	.carousel {
+		width: 500px;
+		height: 530px;
+		box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+		overflow: hidden;
+
+		// Image container
+		.image-container {
+			display: flex;
+			transform: translateX(0);
+			transition: transform 0.8s ease-in-out;
+
+			// Images
+			img {
+				width: 500px;
+				height: 500px;
+				background-position: center;
+				background-size: cover;
+			}
+		}
+
+		// Buttons container
+		.buttons-container {
+			display: flex;
+			justify-content: space-between;
+
+			// Buttons
+			button {
+				width: 49.5%;
+				padding: 0.5rem;
+				background: rebeccapurple;
+				color: white;
+				border: none;
+				cursor: pointer;
+
+				// Buttons' hover effect
+				&:hover {
+					opacity: 0.8;
+					transition: opacity 0.3s ease-in;
+				}
+			}
+		}
+	}
+}
