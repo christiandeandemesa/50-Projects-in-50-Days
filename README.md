@@ -103,3 +103,6 @@ https://user-images.githubusercontent.com/85912934/177636098-9a1616cc-b7e2-4216-
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Notes%20App' target='_blank' rel="noreferrer noopener">PROJECT 33: NOTES APP</a>
 https://user-images.githubusercontent.com/85912934/177674746-05741ef6-419b-44a0-83e5-d48180fa750b.mp4
 
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Animated%20Countdown' target='_blank' rel="noreferrer noopener">PROJECT 34: ANIMATED COUNTDOWN</a>
+https://user-images.githubusercontent.com/85912934/177708944-55059972-d833-4df9-a82b-0518ba9a2ad1.mp4
+
