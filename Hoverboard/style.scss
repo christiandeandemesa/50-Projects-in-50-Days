@@ -1,0 +1,38 @@
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #111;
+	overflow: hidden;
+
+	// Squares container
+	.container {
+		max-width: 400px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+
+		// Squares
+		.square {
+			width: 16px;
+			height: 16px;
+			margin: 2px;
+			background: #1d1d1d;
+			box-shadow: 0 0 2px black;
+			transition: 2s ease;
+
+			// Squares' hover effect
+			&:hover {
+				transition-duration: 0s; // When the square is hovered on, immediately transition the background and box-shadow.
+			}
+		}
+	}
+}

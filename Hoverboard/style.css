@@ -1,0 +1,53 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #111;
+  overflow: hidden;
+}
+
+body .container {
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .container .square {
+  width: 16px;
+  height: 16px;
+  margin: 2px;
+  background: #1d1d1d;
+  -webkit-box-shadow: 0 0 2px black;
+          box-shadow: 0 0 2px black;
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+}
+
+body .container .square:hover {
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
+}
+/*# sourceMappingURL=style.css.map */
