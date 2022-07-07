@@ -100,5 +100,6 @@ https://user-images.githubusercontent.com/85912934/177480799-01db87ed-a014-45f8-
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/GCF%20Checkboxes' target='_blank' rel="noreferrer noopener">PROJECT 32: GOOD, CHEAP, FAST CHECKBOXES</a>
 https://user-images.githubusercontent.com/85912934/177636098-9a1616cc-b7e2-4216-977f-1bbb7d5f9282.mp4
 
-
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Notes%20App' target='_blank' rel="noreferrer noopener">PROJECT 33: NOTES APP</a>
+https://user-images.githubusercontent.com/85912934/177674746-05741ef6-419b-44a0-83e5-d48180fa750b.mp4
 
