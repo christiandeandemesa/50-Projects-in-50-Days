@@ -5,104 +5,148 @@ Exactly as the title says, and all projects come from this [course](https://www.
 However, some of the HTML, CSS, or JS may differ from what the course provided.
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Expandable%20Cards' target='_blank' rel="noreferrer noopener">PROJECT 1: EXPANDABLE CARDS</a>
-https://user-images.githubusercontent.com/85912934/174892307-9a6194c2-e619-48fa-8000-9fc126242b0e.mp4
+https://user-images.githubusercontent.com/85912934/178127264-e9453dad-09b2-4c35-8a70-902d017dad78.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Progress%20Steps' target='_blank' rel="noreferrer noopener">PROJECT 2: PROGRESS STEPS</a>
-https://user-images.githubusercontent.com/85912934/174892402-dd3b3136-6221-4f56-a5f7-dc3c32950d94.mp4
+https://user-images.githubusercontent.com/85912934/178127271-e0674059-2061-46a9-9081-71bb16524d2a.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Rotating%20Navigation' target='_blank' rel="noreferrer noopener">PROJECT 3: ROTATING NAVIGATION</a>
-https://user-images.githubusercontent.com/85912934/174892430-96c7a112-67ba-4102-843c-4b6423ce8232.mp4
+https://user-images.githubusercontent.com/85912934/178127274-768b5b87-9ea9-4f82-bd72-92a7af27034d.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Hidden%20Search%20Widget' target='_blank' rel="noreferrer noopener">PROJECT 4: HIDDEN SEARCH WIDGET</a>
-https://user-images.githubusercontent.com/85912934/174892551-51527e58-c6c1-42b9-a5bc-67e4054df19f.mp4
+https://user-images.githubusercontent.com/85912934/178127281-c4f3cc16-308a-4f80-af78-3819b04142f5.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Blurry%20Loading' target='_blank' rel="noreferrer noopener">PROJECT 5: BLURRY LOADING</a>
-https://user-images.githubusercontent.com/85912934/174947031-8a113b64-107e-4a3f-8578-54c0f440f791.mp4
+https://user-images.githubusercontent.com/85912934/178127284-2111bbbf-2024-4ef5-8aab-217791b0b49c.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Scroll%20Animation' target='_blank' rel="noreferrer noopener">PROJECT 6: SCROLL ANIMATION</a>
-https://user-images.githubusercontent.com/85912934/175115661-cba8447f-f789-425f-ac14-9b10221f0a96.mp4
+https://user-images.githubusercontent.com/85912934/178127290-ae6803cd-4024-404f-890b-460e7619a38e.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Split%20Landing%20Page' target='_blank' rel="noreferrer noopener">PROJECT 7: SPLIT LANDING PAGE</a>
-https://user-images.githubusercontent.com/85912934/175341467-9198f451-42bf-474b-97d7-221d002308c9.mp4
+https://user-images.githubusercontent.com/85912934/178127298-f9a97051-16ce-40a0-af81-04e73f57eb25.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Form%20Wave%20Animation' target='_blank' rel="noreferrer noopener">PROJECT 8: FORM WAVE ANIMATION</a>
-https://user-images.githubusercontent.com/85912934/175375954-c32ccda0-1969-43c6-acf5-b6373484b84d.mp4
+https://user-images.githubusercontent.com/85912934/178127324-3e9df006-ef24-4e92-8006-a999f5d2af0a.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Sound%20Board' target='_blank' rel="noreferrer noopener">PROJECT 9: SOUND BOARD</a>
-https://user-images.githubusercontent.com/85912934/175433386-270cab77-0f4d-4b59-8f8e-3705c0fe550e.mp4
+https://user-images.githubusercontent.com/85912934/178127329-3db0f544-73a5-4fd4-8ccd-ccc9e45ae232.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Dad%20Jokes' target='_blank' rel="noreferrer noopener">PROJECT 10: DAD JOKES</a>
-https://user-images.githubusercontent.com/85912934/175467400-670c2eb2-44cf-4035-ae65-582ef8fd70d6.mp4
+https://user-images.githubusercontent.com/85912934/178127330-5b33680d-29aa-4111-ab08-3c9aa6081350.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Event%20KeyCodes' target='_blank' rel="noreferrer noopener">PROJECT 11: EVENT KEYCODES</a>
-https://user-images.githubusercontent.com/85912934/175662550-426a7986-d070-46ef-a0ec-496cf3223ad9.mp4
+https://user-images.githubusercontent.com/85912934/178127335-b928c246-5966-44cd-b04f-7054deaca37e.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/FAQ%20Collapse' target='_blank' rel="noreferrer noopener">PROJECT 12: FAQ COLLAPSE</a>
-https://user-images.githubusercontent.com/85912934/175751564-98367cac-e725-4fdf-bed1-206343bc48b3.mp4
+https://user-images.githubusercontent.com/85912934/178127337-6efbf16e-8dec-4892-aa41-413c1e9818ac.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Random%20Choice%20Picker' target='_blank' rel="noreferrer noopener">PROJECT 13: RANDOM CHOICE PICKER</a>
-https://user-images.githubusercontent.com/85912934/175790231-02fdb3e9-d187-41df-9efd-6c17abf33ae2.mp4
+https://user-images.githubusercontent.com/85912934/178127340-7a168ec8-35eb-4e77-88e3-48fd29810e21.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Animated%20Navigation' target='_blank' rel="noreferrer noopener">PROJECT 14: ANIMATED NAVIGATION</a>
-https://user-images.githubusercontent.com/85912934/175786007-e34fc0f2-d5a0-4643-97dd-d6a151ae42f9.mp4
+https://user-images.githubusercontent.com/85912934/178127343-900af751-c45a-4971-b4b6-41969122563a.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Incrementing%20Counter' target='_blank' rel="noreferrer noopener">PROJECT 15: INCREMENTING COUNTER</a>
-https://user-images.githubusercontent.com/85912934/175790224-3891f846-aa9c-40db-bb10-24e85f2d5e13.mp4
+https://user-images.githubusercontent.com/85912934/178127348-7d216625-effc-4ed7-a561-a747b18561d2.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Drink%20Water' target='_blank' rel="noreferrer noopener">PROJECT 16: DRINK WATER</a>
-https://user-images.githubusercontent.com/85912934/175796043-87c61a37-ddfc-47c1-bf37-2eded5f1817e.mp4
+https://user-images.githubusercontent.com/85912934/178127351-8a163872-286a-4ee5-bafc-addf879d3993.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Movie%20App' target='_blank' rel="noreferrer noopener">PROJECT 17: MOVIE APP</a>
-https://user-images.githubusercontent.com/85912934/175802319-247ffd11-e429-411e-b719-400b0a5f11c6.mp4
+https://user-images.githubusercontent.com/85912934/178127353-385ab730-6fd3-45e7-87ae-3b587164afd8.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Background%20Slider' target='_blank' rel="noreferrer noopener">PROJECT 18: BACKGROUND SLIDER</a>
-https://user-images.githubusercontent.com/85912934/175861349-9d3c6c07-e479-4e6b-9b6b-6dfabe422ba2.mp4
+https://user-images.githubusercontent.com/85912934/178127357-1a871df0-ed30-4c11-a96c-9989e475b759.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Theme%20Clock' target='_blank' rel="noreferrer noopener">PROJECT 19: THEME CLOCK</a>
-https://user-images.githubusercontent.com/85912934/176012486-7db3d9bd-0643-4985-9baa-6554b6bb9ef7.mp4
+https://user-images.githubusercontent.com/85912934/178127363-0d8570b8-f529-4d0e-85f2-a97b2e2bf192.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Button%20Ripple%20Effect' target='_blank' rel="noreferrer noopener">PROJECT 20: BUTTON RIPPLE EFFECT</a>
-https://user-images.githubusercontent.com/85912934/176041420-2694b8ab-e5ec-413b-b1ed-f44e5079f5e0.mp4
+https://user-images.githubusercontent.com/85912934/178127366-640b4afb-9e29-4cc5-b00a-a1aa175c9ab9.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Drag%20N%20Drop' target='_blank' rel="noreferrer noopener">PROJECT 21: DRAG N DROP</a>
-https://user-images.githubusercontent.com/85912934/177027845-7f946071-8b71-4f0c-812f-f59da759242f.mp4
+https://user-images.githubusercontent.com/85912934/178127370-41a51253-00f3-446f-a81d-f8c88619d9ef.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Drawing%20App' target='_blank' rel="noreferrer noopener">PROJECT 22: DRAWING APP</a>
-https://user-images.githubusercontent.com/85912934/177207982-86ee91dc-439f-47ab-920d-a43ac9f5761b.mp4
+https://user-images.githubusercontent.com/85912934/178127372-e54c6979-9b67-4e07-a060-6e2dbd75c2e8.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Kinetic%20CSS%20Loader' target='_blank' rel="noreferrer noopener">PROJECT 23: KINETIC CSS LOADER</a>
-https://user-images.githubusercontent.com/85912934/177208078-c1593f69-ddab-4b7a-8b5d-071fa26a537d.mp4
+https://user-images.githubusercontent.com/85912934/178127377-41766dba-b65c-4c87-b7aa-21c62beedbff.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Content%20Placeholder' target='_blank' rel="noreferrer noopener">PROJECT 24: CONTENT PLACEHOLDER</a>
-https://user-images.githubusercontent.com/85912934/177208128-520a05c9-f840-4647-9cd7-a7a8174f72da.mp4
+https://user-images.githubusercontent.com/85912934/178127380-dd6b8272-f835-404f-a026-c6c5a37f468f.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Sticky%20Navbar' target='_blank' rel="noreferrer noopener">PROJECT 25: STICKY NAVBAR</a>
-https://user-images.githubusercontent.com/85912934/177208182-34e2e136-8cf3-4d4d-8fa8-bb1288ad6b0d.mp4
+https://user-images.githubusercontent.com/85912934/178127382-d0939ee2-cba7-4fe3-b3bc-01a06a227345.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Double%20Vertical%20Slider' target='_blank' rel="noreferrer noopener">PROJECT 26: DOUBLE VERTICAL SLIDER</a>
-https://user-images.githubusercontent.com/85912934/177258206-ee453d43-e4c9-408d-a0d8-acb6d278e248.mp4
+https://user-images.githubusercontent.com/85912934/178127385-1b9b8840-fcd8-4f2f-9446-d88ccb6d338b.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Toast%20Notification' target='_blank' rel="noreferrer noopener">PROJECT 27: TOAST NOTIFICATION</a>
-https://user-images.githubusercontent.com/85912934/177408041-c70177d6-b2bd-4b4c-9ab2-794fc51f81ad.mp4
+https://user-images.githubusercontent.com/85912934/178127387-76b7ae25-6e31-4066-816d-be4b5429bbea.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Github%20Profiles' target='_blank' rel="noreferrer noopener">PROJECT 28: GITHUB PROFILES</a>
-https://user-images.githubusercontent.com/85912934/177441996-8a78ae99-4ab0-46f8-b4b4-4b438c54280b.mp4
+https://user-images.githubusercontent.com/85912934/178127388-90dfe7a9-d8bf-40cf-b502-4022179f1950.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Double%20Heart%20Click' target='_blank' rel="noreferrer noopener">PROJECT 29: DOUBLE HEART CLICK</a>
-https://user-images.githubusercontent.com/85912934/177453460-f2c7131b-4847-4ed9-865d-28f9af6d00d6.mp4
+https://user-images.githubusercontent.com/85912934/178127390-b086e657-9962-4d0b-9a13-3475bd75e8b8.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Auto%20Text%20Effect' target='_blank' rel="noreferrer noopener">PROJECT 30: AUTO TEXT EFFECT</a>
-https://user-images.githubusercontent.com/85912934/177457660-d5c3dbd5-844f-41c9-8cb8-b6f66eff8244.mp4
+https://user-images.githubusercontent.com/85912934/178127393-390b3388-1e95-4d0a-b0a5-051901667a77.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Password%20Generator' target='_blank' rel="noreferrer noopener">PROJECT 31: PASSWORD GENERATOR</a>
-https://user-images.githubusercontent.com/85912934/177480799-01db87ed-a014-45f8-85d2-5c7f8b451d20.mp4
+https://user-images.githubusercontent.com/85912934/178127396-9a14c27c-24a7-4b98-9522-7c502a014979.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/GCF%20Checkboxes' target='_blank' rel="noreferrer noopener">PROJECT 32: GOOD, CHEAP, FAST CHECKBOXES</a>
-https://user-images.githubusercontent.com/85912934/177636098-9a1616cc-b7e2-4216-977f-1bbb7d5f9282.mp4
+https://user-images.githubusercontent.com/85912934/178127399-d407662c-7e02-45bb-a30e-a8a4f9fb5385.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Notes%20App' target='_blank' rel="noreferrer noopener">PROJECT 33: NOTES APP</a>
-https://user-images.githubusercontent.com/85912934/177674746-05741ef6-419b-44a0-83e5-d48180fa750b.mp4
+https://user-images.githubusercontent.com/85912934/178127401-11976e1d-df18-46b5-ba5e-d24e92e60963.mp4
+
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Animated%20Countdown' target='_blank' rel="noreferrer noopener">PROJECT 34: ANIMATED COUNTDOWN</a>
-https://user-images.githubusercontent.com/85912934/177708944-55059972-d833-4df9-a82b-0518ba9a2ad1.mp4
+https://user-images.githubusercontent.com/85912934/178127406-b5a4dc55-c3f7-4eb8-b2ac-3de4971a89ce.mp4
 
+
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Image%20Carousel' target='_blank' rel="noreferrer noopener">PROJECT 35: IMAGE CAROUSEL</a>
+https://user-images.githubusercontent.com/85912934/178127436-af52dae1-666c-4c7f-a2c5-43bf06b2c34b.mp4
+
+
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Hoverboard' target='_blank' rel="noreferrer noopener">PROJECT 36: HOVERBOARD</a>
+https://user-images.githubusercontent.com/85912934/178127443-8f393f61-d15f-41e0-9ea6-577dbd8b4404.mp4
+
+
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Pokedex' target='_blank' rel="noreferrer noopener">PROJECT 37: POKEDEX</a>
+https://user-images.githubusercontent.com/85912934/178127459-3aaace48-5efd-46e1-a318-d04bcc3bc3fb.mp4
