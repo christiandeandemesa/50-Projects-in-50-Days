@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$bg-color-one: #24f9cb;
+$bg-color-two: #cb24f9;
+$primary-color: #f9ca24;
+$secondary-color: #f6e58d;
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	// https://stackoverflow.com/questions/35361986/css-gradient-checkerboard-pattern
+	background-image: linear-gradient(45deg, $bg-color-one 25%, $bg-color-two 25%),
+		linear-gradient(-45deg, $bg-color-one 25%, $bg-color-two 25%),
+		linear-gradient(45deg, $bg-color-two 75%, $bg-color-one 75%),
+		linear-gradient(-45deg, $bg-color-two 75%, $bg-color-one 75%);
+	background-size: 20px 20px;
+	background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+	overflow: hidden;
+
+	// Magic button
+	.magic {
+		position: fixed;
+		top: 20px;
+		padding: 12px 20px;
+		background: $primary-color;
+		color: black;
+		border: none;
+		border-radius: 3px;
+		box-shadow: 0 3px $secondary-color;
+		font-size: 16px;
+		font-weight: bold;
+		letter-spacing: 1px;
+		z-index: 1;
+		cursor: pointer;
+
+		// Magic button click effect
+		&:focus {
+			outline: none;
+		}
+
+		// Magic button while clicked effect
+		&:active {
+			box-shadow: none;
+			transform: translateY(2px);
+		}
+	}
+
+	// Boxes container
+	.boxes {
+		width: 500px;
+		height: 500px;
+		margin-top: 80px;
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		transition: 0.8s ease; // .big properties.
+
+		// Boxes
+		.box {
+			position: relative;
+			width: 125px;
+			height: 125px;
+			background-image: url('https://media.giphy.com/media/7kn27lnYSAE9O/giphy.gif');
+			background-size: 500px 500px; // GIF is 500px wide and high.
+			background-repeat: no-repeat;
+			transition: 0.7s ease;
+
+			// Boxes' bottom border
+			&::before {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 15px;
+				bottom: -15px;
+				left: 8px;
+				background-color: $secondary-color;
+				transform: skewX(45deg); // Skews horizontally to the right.
+			}
+
+			// Boxes' right border
+			&::after {
+				content: '';
+				position: absolute;
+				width: 15px;
+				height: 100%;
+				top: 8px;
+				right: -15px;
+				background-color: $primary-color;
+				transform: skewY(45deg); // Skews vertically to the bottom.
+			}
+		}
+	}
+
+	// Additional styling for when the boxes container is spread out
+	.big {
+		width: 600px;
+		height: 600px;
+
+		// Additional styling for each box
+		.box {
+			transform: rotateZ(360deg); // Spins 360 degrees.
+		}
+	}
+}
