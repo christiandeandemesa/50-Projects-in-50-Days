@@ -13,5 +13,8 @@
 -   User can remove characters from the password input to make the background image blurrier.
 -   Responsive web design for the Galaxy Fold, Samsung Galaxy S8+, iPhone SE, iPhone 12 Pro, Pixel 5, Samsung Galaxy A51/71, Samsung Galaxy S20 Ultra, iPhone XR, Surface Duo, iPad Mini, iPad Air, Surface Pro 7, Nesthub, and Nesthub Max in portrait and landscape sizes, and most standard laptops.
 
+## Upcoming Features
+-   User will be able to make the background image clearer using a strong password, rather than a long password.
+
 ## Author
 -   Christian Demesa: https://github.com/christiandeandemesa
