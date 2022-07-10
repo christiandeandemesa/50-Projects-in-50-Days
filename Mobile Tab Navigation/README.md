@@ -1,4 +1,4 @@
-# Pokedex
+# Mobile Tab Navigation
 
 -   Displays a navbar for mobile devices. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS reset, Font Awesome icons, and Google fonts.
 
