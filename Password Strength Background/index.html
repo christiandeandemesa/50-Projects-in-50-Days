@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Password Strength Background</title>
+		<link rel="stylesheet" href="style.css" />
+
+		<!--Tailwind CSS framework-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+			referrerpolicy="no-referrer"
+		/>
+	</head>
+	<body>
+		<!--Background image-->
+		<div class="background" id="background"></div>
+
+		<!--Form container-->
+		<div class="bg-white rounded p-10 text-center shadow-md">
+			<!--Tailwind CSS classes that change the styling-->
+			<h1 class="text-3xl">Image Password Strength</h1>
+			<p class="text-sm text-gray-700">Change the password to see the effect</p>
+
+			<!--Email label and input-->
+			<div class="my-4 text-left">
+				<label for="email" class="text-gray-900">Email:</label>
+				<input
+					type="text"
+					placeholder="Enter email"
+					class="border block w-full p-2 mt-2 rounded"
+					id="email"
+				/>
+			</div>
+
+			<!--Password label and input-->
+			<div class="my-4 text-left">
+				<label for="email" class="text-gray-900">Password:</label>
+				<input
+					type="password"
+					placeholder="Enter password"
+					class="border block w-full p-2 mt-2 rounded"
+					id="password"
+				/>
+			</div>
+
+			<!--Submit button-->
+			<button class="bg-black text-white py-2 mt-4 inline-block w-full rounded">
+				Submit
+			</button>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
