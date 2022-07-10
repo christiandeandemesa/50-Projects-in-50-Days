@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$active-color: #daa520;
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: black;
+
+	// Phone container
+	.phone {
+		position: relative;
+		width: 340px;
+		height: 600px;
+		border: 1px solid white;
+		border-radius: 15px;
+		overflow: hidden;
+
+		// Images
+		.content {
+			position: absolute;
+			width: 100%;
+			height: calc(100% - 60px); // Height calculated so it doesn't overlap the navbar.
+			top: 0;
+			left: 0;
+			opacity: 0;
+			object-fit: cover; // Images cover the entire container.
+			transition: opacity 0.4s ease-in;
+		}
+
+		// Shown image
+		.show {
+			opacity: 1;
+		}
+
+		// Navbar
+		nav {
+			position: absolute;
+			width: 100%;
+			bottom: 0;
+			left: 0;
+			margin-top: -5px;
+
+			// Icons container
+			ul {
+				height: 60px;
+				display: flex;
+				background: white;
+				list-style-type: none;
+
+				// Icons
+				li {
+					padding: 10px;
+					flex: 1;
+					color: #777;
+					text-align: center;
+					cursor: pointer;
+					transition: color 0.5s ease-out;
+
+					// Icons hover effect
+					&:hover {
+						color: $active-color;
+					}
+
+					// Icons' text
+					p {
+						margin: 2px 0;
+						font-size: 12px;
+					}
+				}
+
+				// Active icon
+				.active {
+					color: $active-color;
+				}
+			}
+		}
+	}
+}
+
+// Styling for smaller viewports
+@media (max-width: 915px) {
+	body {
+		.phone {
+			width: 100vw;
+			height: 100vh;
+			border: none;
+			border-radius: 0;
+		}
+	}
+}

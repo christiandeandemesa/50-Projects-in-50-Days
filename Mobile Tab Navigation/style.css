@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: black;
+}
+
+body .phone {
+  position: relative;
+  width: 340px;
+  height: 600px;
+  border: 1px solid white;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+body .phone .content {
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 60px);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: opacity 0.4s ease-in;
+  transition: opacity 0.4s ease-in;
+}
+
+body .phone .show {
+  opacity: 1;
+}
+
+body .phone nav {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  margin-top: -5px;
+}
+
+body .phone nav ul {
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  list-style-type: none;
+}
+
+body .phone nav ul li {
+  padding: 10px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  color: #777;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: color 0.5s ease-out;
+  transition: color 0.5s ease-out;
+}
+
+body .phone nav ul li:hover {
+  color: #daa520;
+}
+
+body .phone nav ul li p {
+  margin: 2px 0;
+  font-size: 12px;
+}
+
+body .phone nav ul .active {
+  color: #daa520;
+}
+
+@media (max-width: 915px) {
+  body .phone {
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    border-radius: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
