@@ -160,5 +160,12 @@ https://user-images.githubusercontent.com/85912934/178157258-ae92b0db-1659-4826-
 https://user-images.githubusercontent.com/85912934/178159131-775a92d8-c7d2-4b79-ad0c-63901f7c2765.mp4
 
 
-### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/3D%20Background%20Boxes' target='_blank' rel="noreferrer noopener">PROJECT 40: 3D Background Boxes</a>
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/3D%20Background%20Boxes' target='_blank' rel="noreferrer noopener">PROJECT 40: 3D BACKGROUND BOXES</a>
 https://user-images.githubusercontent.com/85912934/178161007-ef245a2d-6668-4af7-918b-50306526fd03.mp4
+
+
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Verify%20Account%20UI' target='_blank' rel="noreferrer noopener">PROJECT 41: VERIFY ACCOUNT UI</a>
+https://user-images.githubusercontent.com/85912934/178162023-fe00e640-3932-40c9-94d9-1e17d11602d7.mp4
+
+
+
