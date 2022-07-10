@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(45deg, red, green);
+	overflow: hidden;
+
+	// Container
+	.container {
+		width: 800px;
+		padding: 30px;
+		background: white;
+		border-radius: 10px;
+		text-align: center;
+
+		// Code container
+		.code-container {
+			margin: 40px 0;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			flex-wrap: wrap;
+
+			// Code numbers
+			.code {
+				width: 100px;
+				height: 120px;
+				margin: 1%;
+				border: 1px solid #eee;
+				border-radius: 5px;
+				font-size: 75px;
+				font-weight: 300;
+				text-align: center;
+				-moz-appearance: textfield; // Removes the input arrows in Firefox.
+
+				// Removes the input arrows in Chrome, Safari, Edge, and Opera
+				&::-webkit-outer-spin-button,
+				&::-webkit-inner-spin-button {
+					-webkit-appearance: none;
+					margin: 0;
+				}
+
+				// Code numbers' clicked on effect
+				&:focus {
+					border: 2px dashed red;
+					outline: none;
+				}
+
+				// Code numbers' valid input effect
+				&:valid {
+					border: 2px solid green;
+					box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.25);
+				}
+			}
+		}
+
+		// Disclaimer
+		.info {
+			max-width: 400px;
+			padding: 10px;
+			display: inline-block;
+			background: #eaeaea;
+			color: #777;
+			border-radius: 5px;
+			line-height: 20px; // Vertical distance between lines.
+		}
+	}
+}
+
+// Additional styling for smaller viewports
+@media (max-width: 750px) {
+	body {
+		.container {
+			.code-container {
+				.code {
+					width: 80px;
+					height: 96px;
+					font-size: 60px;
+				}
+			}
+		}
+	}
+}
