@@ -16,8 +16,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#c80000), to(#ff9090));
-  background: linear-gradient(#c80000, #ff9090);
+  background: -webkit-gradient(linear, left top, left bottom, from(#c80000), color-stop(#ff9090), to(#c80000));
+  background: linear-gradient(#c80000, #ff9090, #c80000);
   overflow: hidden;
 }
 
@@ -57,6 +57,8 @@ body .hovered {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    background: -webkit-gradient(linear, left top, right top, from(#c80000), color-stop(#ff9090), to(#c80000));
+    background: linear-gradient(to right, #c80000, #ff9090, #c80000);
   }
 }
 

@@ -13,7 +13,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient($primary-color, $secondary-color);
+	background: linear-gradient($primary-color, $secondary-color, $primary-color);
 	overflow: hidden;
 
 	// Empty white boxes
@@ -54,6 +54,7 @@ body {
 @media (max-width: 860px) {
 	body {
 		flex-direction: column;
+		background: linear-gradient(to right, $primary-color, $secondary-color, $primary-color);
 	}
 }
 

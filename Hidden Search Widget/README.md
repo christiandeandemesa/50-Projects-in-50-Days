@@ -1,7 +1,6 @@
 # Hidden Search Widget
 
--   Displays a button that, when clicked on, expands or collapses the search bar. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS
-    reset.
+-   Displays a button that, when clicked on, horizontally expands or collapses the search bar. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS reset, Font Awesome icons, and Google fonts.
 
 ## How to run this project
 
@@ -10,9 +9,8 @@
 
 ## Features
 
--   User can click on the button to expand and collapse the search bar.
--   Responsive web design for the Galaxy Fold, Samsung Galaxy S8+, iPhone SE, iPhone 12 Pro, Pixel 5, Samsung Galaxy A51/71, Samsung Galaxy S20 Ultra, iPhone XR, Surface
-    Duo, iPad Mini, iPad Air, Surface Pro 7, Nesthub, and Nesthub Max in portrait and landscape sizes, and most standard laptops.
+-   User can click on the button to horizontally expand and collapse the search bar.
+-   Responsive web design for the Galaxy Fold, Samsung Galaxy S8+, iPhone SE, iPhone 12 Pro, Pixel 5, Samsung Galaxy A51/71, Samsung Galaxy S20 Ultra, iPhone XR, Surface Duo, iPad Mini, iPad Air, Surface Pro 7, Nesthub, and Nesthub Max in portrait and landscape sizes, and most standard laptops.
 
 ## Author
 

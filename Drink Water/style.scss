@@ -3,6 +3,7 @@
 $bg-color: #3494e4;
 $primary-color: #144fc6;
 $secondary-color: #6ab3f8;
+$radius: (200px + 10px + 10px) / 4;
 
 * {
 	box-sizing: border-box; // Height and width aren't affected by borders and padding.
@@ -17,6 +18,35 @@ body {
 	flex-direction: column;
 	align-items: center;
 	background: $bg-color;
+	// Wave pattern taken from https://dev.to/rossangus/simple-wave-pattern-with-css-gradients-29g4.
+	background-image: radial-gradient(
+			circle at center top,
+			transparent,
+			transparent $radius - 10px,
+			$secondary-color $radius - 10px,
+			$secondary-color $radius,
+			transparent $radius,
+			transparent
+		),
+		radial-gradient(
+			circle at right bottom,
+			transparent,
+			transparent $radius - 10px,
+			$secondary-color $radius - 10px,
+			$secondary-color $radius,
+			transparent $radius,
+			transparent
+		),
+		radial-gradient(
+			circle at left bottom,
+			transparent,
+			transparent $radius - 10px,
+			$secondary-color $radius - 10px,
+			$secondary-color $radius,
+			transparent $radius,
+			transparent
+		); // Three circles that comprise the wave.
+	background-size: 200px 100px; // Repeates the three circles by shrinking its background-size.
 	color: white;
 
 	// Title

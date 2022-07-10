@@ -16,11 +16,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(
-		$primary-color 45%,
-		$secondary-color 55%,
-		$secondary-color 100%
-	); // The primary color stretches from 0% to 45%, the secondary color stretches from 55% to 100%, and there is a transition of colors between those two from 46% to 54%.
+	background: repeating-linear-gradient($primary-color, $secondary-color, $primary-color);
 	overflow: hidden;
 
 	// Closed navigation bar

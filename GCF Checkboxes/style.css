@@ -23,6 +23,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background-color: black;
+  color: white;
   overflow: hidden;
   -webkit-transition: background-color 0.8s ease-out;
   transition: background-color 0.8s ease-out;
@@ -56,8 +57,8 @@ body .toggle-container .toggle:checked + #fast-label {
 }
 
 body .toggle-container .toggle:checked + .label .ball {
-  -webkit-animation: slideOn 0.3s linear;
-          animation: slideOn 0.3s linear;
+  -webkit-animation: slideOn 0.3s linear forwards;
+          animation: slideOn 0.3s linear forwards;
 }
 
 body .toggle-container .label {
@@ -78,8 +79,8 @@ body .toggle-container .label .ball {
   height: 34px;
   background: white;
   border-radius: 50%;
-  -webkit-animation: slideOff 0.3s linear;
-          animation: slideOff 0.3s linear;
+  -webkit-animation: slideOff 0.3s linear forwards;
+          animation: slideOff 0.3s linear forwards;
 }
 
 @-webkit-keyframes slideOn {

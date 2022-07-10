@@ -1,7 +1,6 @@
 # Blurry Loading
 
--   Displays a loading screen that becomes less blurry as the percent approaches 100. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom
-    CSS reset.
+-   Displays a loading screen that becomes less blurry as the number increments. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS reset and Google fonts.
 
 ## How to run this project
 
@@ -10,8 +9,12 @@
 
 ## Features
 
--   Responsive web design for the Galaxy Fold, Samsung Galaxy S8+, iPhone SE, iPhone 12 Pro, Pixel 5, Samsung Galaxy A51/71, Samsung Galaxy S20 Ultra, iPhone XR, Surface
-    Duo, iPad Mini, iPad Air, Surface Pro 7, Nesthub, and Nesthub Max in portrait and landscape sizes, and most standard laptops.
+-   User can view a loading screen.
+-   Responsive web design for the Galaxy Fold, Samsung Galaxy S8+, iPhone SE, iPhone 12 Pro, Pixel 5, Samsung Galaxy A51/71, Samsung Galaxy S20 Ultra, iPhone XR, Surface Duo, iPad Mini, iPad Air, Surface Pro 7, Nesthub, and Nesthub Max in portrait and landscape sizes, and most standard laptops.
+
+## Upcoming Features
+
+-   User will be able to click a button to replay the loading screen.
 
 ## Author
 

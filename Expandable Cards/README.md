@@ -1,7 +1,6 @@
 # Expandable Cards
 
--   Displays a row of images that expand and contract when a user clicks on them. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS
-    reset, and animations.
+-   Displays a row of images that horizontally collapse and expand when the user clicks on them. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS reset and Google fonts.
 
 ## How to run this project
 
@@ -10,9 +9,8 @@
 
 ## Features
 
--   User can click on a card to cause it to expand and display text.
--   Responsive web design for the Galaxy Fold, Samsung Galaxy S8+, iPhone SE, iPhone 12 Pro, Pixel 5, Samsung Galaxy A51/71, Samsung Galaxy S20 Ultra, iPhone XR, Surface
-    Duo, iPad Mini, iPad Air, Surface Pro 7, Nesthub, and Nesthub Max in portrait and landscape sizes, and most standard laptops.
+-   User can click on an image, causing it to expand and display text, and collapse the other expanded image.
+-   Responsive web design for the Galaxy Fold, Samsung Galaxy S8+, iPhone SE, iPhone 12 Pro, Pixel 5, Samsung Galaxy A51/71, Samsung Galaxy S20 Ultra, iPhone XR, Surface Duo, iPad Mini, iPad Air, Surface Pro 7, Nesthub, and Nesthub Max in portrait and landscape sizes, and most standard laptops.
 
 ## Author
 

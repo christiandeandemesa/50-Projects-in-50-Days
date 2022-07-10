@@ -22,7 +22,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: repeating-conic-gradient(black 0%, white 1%, black 2%) center/cover no-repeat;
+  background: repeating-conic-gradient(black 0%, white 3%, black 6%) center/cover no-repeat;
 }
 
 body canvas {

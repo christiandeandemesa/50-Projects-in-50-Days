@@ -1,7 +1,6 @@
 # Random Choice Picker
 
--   Displays a text area to create choices, then randomly choose one. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS
-    reset.
+-   Displays a text area to create choices, then randomly chooses one. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS reset and Google fonts.
 
 ## How to run this project
 
@@ -12,8 +11,7 @@
 
 -   User can create multiple choices by separating them with a comma.
 -   User can click the enter key to have a choice randomly made.
--   Responsive web design for the Galaxy Fold, Samsung Galaxy S8+, iPhone SE, iPhone 12 Pro, Pixel 5, Samsung Galaxy A51/71, Samsung Galaxy S20 Ultra, iPhone XR, Surface
-    Duo, iPad Mini, iPad Air, Surface Pro 7, Nesthub, and Nesthub Max in portrait and landscape sizes, and most standard laptops.
+-   Responsive web design for the Galaxy Fold, Samsung Galaxy S8+, iPhone SE, iPhone 12 Pro, Pixel 5, Samsung Galaxy A51/71, Samsung Galaxy S20 Ultra, iPhone XR, Surface Duo, iPad Mini, iPad Air, Surface Pro 7, Nesthub, and Nesthub Max in portrait and landscape sizes, and most standard laptops.
 
 ## Author
 

@@ -1,6 +1,6 @@
 # Auto Text Effect
 
--   Displays a sentence typed out one character at a time. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS reset.
+-   Displays a sentence typed out one character at a time. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS reset and Google fonts.
 
 ## How to run this project
 
@@ -9,10 +9,14 @@
 
 ## Features
 
--   User can view a sentence typed out at a variable speed.
--   User can change the speed to have the sentence type out slower or faster.
--   Responsive web design for the Galaxy Fold, Samsung Galaxy S8+, iPhone SE, iPhone 12 Pro, Pixel 5, Samsung Galaxy A51/71, Samsung Galaxy S20 Ultra, iPhone XR, Surface
-    Duo, iPad Mini, iPad Air, Surface Pro 7, Nesthub, and Nesthub Max in portrait and landscape sizes, and most standard laptops.
+-   User can view a sentence typed out at a given speed.
+-   User can change the speed to any number from one to ten to have the sentence type out slower or faster.
+-   Responsive web design for the Galaxy Fold, Samsung Galaxy S8+, iPhone SE, iPhone 12 Pro, Pixel 5, Samsung Galaxy A51/71, Samsung Galaxy S20 Ultra, iPhone XR, Surface Duo, iPad Mini, iPad Air, Surface Pro 7, Nesthub, and Nesthub Max in portrait and landscape sizes, and most standard laptops.
+
+## Upcoming Features
+
+-   User will have the ability to write their own sentence.
 
 ## Author
+
 -   Christian Demesa: https://github.com/christiandeandemesa

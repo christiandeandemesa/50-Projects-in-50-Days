@@ -22,7 +22,7 @@ function getUser(username) {
 			createUserCard(res.data);
 			getRepos(username);
 		}) // Executes these functions using the information/data.
-		.catch(err => createErrorCard('There is no Github profile with this username.')); // Executes this function if an error occurs.
+		.catch(err => createErrorCard('There is no GitHub profile with this username.')); // Executes this function if an error occurs.
 }
 
 // Finds the github profile's repositories

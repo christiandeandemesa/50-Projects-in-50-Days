@@ -20,6 +20,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   background: #3494e4;
+  background-image: radial-gradient(circle at center top, transparent, transparent 45px, #6ab3f8 45px, #6ab3f8 55px, transparent 55px, transparent), radial-gradient(circle at right bottom, transparent, transparent 45px, #6ab3f8 45px, #6ab3f8 55px, transparent 55px, transparent), radial-gradient(circle at left bottom, transparent, transparent 45px, #6ab3f8 45px, #6ab3f8 55px, transparent 55px, transparent);
+  background-size: 200px 100px;
   color: white;
 }
 

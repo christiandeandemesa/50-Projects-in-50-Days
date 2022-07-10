@@ -1,7 +1,6 @@
 # Progress Steps
 
--   Displays a progress bar that loads or unloads through steps when the user clicks a button. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS
-    reset.
+-   Displays a progress bar that loads or unloads through steps. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS reset and Google fonts.
 
 ## How to run this project
 
@@ -13,8 +12,7 @@
 -   User can click next to partially load the progress bar.
 -   User can click prev to partially unload the progress bar.
 -   User cannot click disabled buttons.
--   Responsive web design for the Galaxy Fold, Samsung Galaxy S8+, iPhone SE, iPhone 12 Pro, Pixel 5, Samsung Galaxy A51/71, Samsung Galaxy S20 Ultra, iPhone XR, Surface
-    Duo, iPad Mini, iPad Air, Surface Pro 7, Nesthub, and Nesthub Max in portrait and landscape sizes, and most standard laptops.
+-   Responsive web design for the Galaxy Fold, Samsung Galaxy S8+, iPhone SE, iPhone 12 Pro, Pixel 5, Samsung Galaxy A51/71, Samsung Galaxy S20 Ultra, iPhone XR, Surface Duo, iPad Mini, iPad Air, Surface Pro 7, Nesthub, and Nesthub Max in portrait and landscape sizes, and most standard laptops.
 
 ## Author
 

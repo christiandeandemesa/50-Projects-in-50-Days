@@ -8,7 +8,7 @@
 }
 
 body {
-  background: #131313;
+  background: linear-gradient(150deg, #10233c, #326171) center/cover;
   color: white;
 }
 
@@ -23,12 +23,12 @@ body header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #000000;
+  border-bottom: 1px solid white;
 }
 
 body header h1 {
   margin-left: 5vw;
-  color: #e20101;
+  color: #00bb0f;
 }
 
 body header #form .search {
@@ -57,7 +57,7 @@ body main .movie {
   position: relative;
   width: 300px;
   margin: 1rem;
-  background: #000000;
+  background: rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   -webkit-box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
@@ -88,7 +88,7 @@ body main .movie .movie-info h3 {
 
 body main .movie .movie-info span {
   padding: 0.25rem 0.5rem;
-  background: #131313;
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 3px;
   font-weight: bold;
 }
@@ -112,8 +112,8 @@ body main .movie .overview {
   bottom: 0;
   left: 0;
   padding: 2rem;
-  background: white;
-  color: #000000;
+  background: black;
+  color: white;
   -webkit-transform: translateY(101%);
           transform: translateY(101%);
   -webkit-transition: -webkit-transform 0.6s ease;
@@ -124,7 +124,7 @@ body main .movie .overview {
 }
 
 body main .movie .overview h3 {
-  color: #e20101;
+  color: #00bb0f;
 }
 
 body main .movie:hover .overview {

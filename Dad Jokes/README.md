@@ -1,7 +1,6 @@
 # Dad Jokes
 
--   Displays a white container with a dad joke. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS reset, animations, and an async
-    await [API call](https://icanhazdadjoke.com/api).
+-   Displays dad jokes. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS reset, Google fonts, animations, and an async await fetch API toward the [icanhazdadjoke API](https://icanhazdadjoke.com/api).
 
 ## How to run this project
 
@@ -10,10 +9,9 @@
 
 ## Features
 
--   User can view a dad joke when the page first loads.
+-   User can view a dad joke.
 -   User can click the button to change the dad joke.
--   Responsive web design for the Galaxy Fold, Samsung Galaxy S8+, iPhone SE, iPhone 12 Pro, Pixel 5, Samsung Galaxy A51/71, Samsung Galaxy S20 Ultra, iPhone XR, Surface
-    Duo, iPad Mini, iPad Air, Surface Pro 7, Nesthub, and Nesthub Max in portrait and landscape sizes, and most standard laptops.
+-   Responsive web design for the Galaxy Fold, Samsung Galaxy S8+, iPhone SE, iPhone 12 Pro, Pixel 5, Samsung Galaxy A51/71, Samsung Galaxy S20 Ultra, iPhone XR, Surface Duo, iPad Mini, iPad Air, Surface Pro 7, Nesthub, and Nesthub Max in portrait and landscape sizes, and most standard laptops.
 
 ## Author
 

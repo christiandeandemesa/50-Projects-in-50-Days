@@ -16,6 +16,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	background-color: black;
+	color: white;
 	overflow: hidden;
 	transition: background-color 0.8s ease-out;
 
@@ -49,7 +50,7 @@ body {
 
 				// All the balls inside the toggle bars when the checkbox is checked
 				& + .label .ball {
-					animation: slideOn 0.3s linear;
+					animation: slideOn 0.3s linear forwards; // forwards means the style values of the last keyframe (100%) will remain.
 				}
 			}
 		}
@@ -73,7 +74,7 @@ body {
 				height: 34px;
 				background: white;
 				border-radius: 50%;
-				animation: slideOff 0.3s linear;
+				animation: slideOff 0.3s linear forwards; // forwards means the style values of the last keyframe (100%) will remain.
 			}
 		}
 	}

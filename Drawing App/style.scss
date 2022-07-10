@@ -15,7 +15,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	background: repeating-conic-gradient(black 0%, white 1%, black 2%) center/cover no-repeat; // Repeating conic gradient centered in the middle of the viewport, covers the viewport, and does not repeat.
+	background: repeating-conic-gradient(black 0%, white 3%, black 6%) center/cover no-repeat; // Repeating conic gradient centered in the middle of the viewport, covers the viewport, and does not repeat.
 
 	// Canvas
 	canvas {

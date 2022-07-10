@@ -18,8 +18,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(45%, #f4d03f), color-stop(55%, #16a085), to(#16a085));
-  background: linear-gradient(#f4d03f 45%, #16a085 55%, #16a085 100%);
+  background: repeating-linear-gradient(#f4d03f, #16a085, #f4d03f);
   overflow: hidden;
 }
 

@@ -42,7 +42,6 @@ body #insert .key {
       -ms-flex-align: center;
           align-items: center;
   background: black;
-  border: 1px solid #999;
   font-size: 20px;
   font-weight: bold;
 }

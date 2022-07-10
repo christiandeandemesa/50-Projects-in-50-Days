@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-$primary-color: #131313;
-$secondary-color: #000000;
-$tertiary-color: #e20101;
-
 * {
 	box-sizing: border-box; // Height and width aren't affected by borders and padding.
 	font-family: 'Open Sans', sans-serif;
@@ -12,7 +8,7 @@ $tertiary-color: #e20101;
 }
 
 body {
-	background: $primary-color;
+	background: linear-gradient(150deg, #10233c, #326171) center/cover;
 	color: white;
 
 	// Header container
@@ -21,12 +17,12 @@ body {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		background: $secondary-color;
+		border-bottom: 1px solid white;
 
 		// Movie App
 		h1 {
 			margin-left: 5vw;
-			color: #e20101;
+			color: #00bb0f;
 		}
 
 		// Search bar form
@@ -56,7 +52,7 @@ body {
 			position: relative;
 			width: 300px;
 			margin: 1rem;
-			background: $secondary-color;
+			background: rgba(0, 0, 0, 0.3);
 			border-radius: 5px;
 			box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2); // Box shadow does not move to the right, moves to the bottom 10px, has a 5px blur, and the given color.
 			overflow: hidden;
@@ -82,7 +78,7 @@ body {
 				// Movie rating
 				span {
 					padding: 0.25rem 0.5rem;
-					background: $primary-color;
+					background: rgba(255, 255, 255, 0.1);
 					border-radius: 3px;
 					font-weight: bold;
 				}
@@ -111,8 +107,8 @@ body {
 				bottom: 0;
 				left: 0;
 				padding: 2rem;
-				background: white;
-				color: $secondary-color;
+				background: black;
+				color: white;
 				transform: translateY(
 					101%
 				); // Hides the overview below the individual movie container
@@ -121,7 +117,7 @@ body {
 
 				// Overview title
 				h3 {
-					color: $tertiary-color;
+					color: #00bb0f;
 				}
 			}
 
