@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: conic-gradient(#fef9f2, #fef1f2, #fbfef1, #fef9f2);
+  overflow: hidden;
+}
+
+body .panel-container {
+  max-width: 400px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: white;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 90%;
+  text-align: center;
+}
+
+body .panel-container strong {
+  line-height: 20px;
+}
+
+body .panel-container .ratings-container {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .panel-container .ratings-container .rating {
+  margin: 10px 5px;
+  padding: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  cursor: pointer;
+}
+
+body .panel-container .ratings-container .rating:hover {
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body .panel-container .ratings-container .rating:hover small {
+  color: cornflowerblue;
+}
+
+body .panel-container .ratings-container .rating img {
+  width: 40px;
+}
+
+body .panel-container .ratings-container .rating small {
+  margin: 10px 0 0;
+  display: inline-block;
+  color: #555;
+}
+
+body .panel-container .ratings-container .active {
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body .panel-container .ratings-container .active small {
+  color: cornflowerblue;
+}
+
+body .panel-container .btn {
+  padding: 12px 30px;
+  background: #302d2b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+body .panel-container .btn:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+body .panel-container .fa-heart {
+  margin-bottom: 10px;
+  color: red;
+  font-size: 30px;
+}
+/*# sourceMappingURL=style.css.map */

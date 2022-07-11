@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Feedback UI Design</title>
+		<link rel="stylesheet" href="style.css" />
+		<script src="https://kit.fontawesome.com/33b7ce0df3.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<!--Container-->
+		<div class="panel-container" id="panel">
+			<strong>How satisfied are you with this application?</strong>
+
+			<!--Faces container-->
+			<div class="ratings-container">
+				<!--Sad face container-->
+				<div class="rating">
+					<img src="img/sad.png" alt="Not satisfied" />
+					<small>Not satisfied</small>
+				</div>
+
+				<!--Neutral face container-->
+				<div class="rating">
+					<img src="img/neutral.png" alt="Somewhat satisfied" />
+					<small>Somewhat satisfied</small>
+				</div>
+
+				<!--Happy face container-->
+				<div class="rating active">
+					<img src="img/happy.png" alt="Extremely satisfied" />
+					<small>Extremely satisfied</small>
+				</div>
+			</div>
+
+			<!--Send button-->
+			<button class="btn" id="send">Send Feedback</button>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>

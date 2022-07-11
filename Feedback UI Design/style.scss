@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+// Reusable group of styling in Sass
+@mixin active {
+	border-radius: 4px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: conic-gradient(#fef9f2, #fef1f2, #fbfef1, #fef9f2);
+	overflow: hidden;
+
+	// Container
+	.panel-container {
+		max-width: 400px;
+		padding: 30px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background: white;
+		border-radius: 4px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+		font-size: 90%;
+		text-align: center;
+
+		// Question
+		strong {
+			line-height: 20px;
+		}
+
+		// Faces container
+		.ratings-container {
+			margin: 20px 0;
+			display: flex;
+
+			// Face container
+			.rating {
+				margin: 10px 5px;
+				padding: 20px;
+				flex: 1;
+				cursor: pointer;
+
+				// Face container hover effect
+				&:hover {
+					@include active;
+
+					// Additional styling for face container text
+					small {
+						color: cornflowerblue;
+					}
+				}
+
+				// Face image
+				img {
+					width: 40px;
+				}
+
+				// Face container text
+				small {
+					margin: 10px 0 0;
+					display: inline-block;
+					color: #555;
+				}
+			}
+
+			// Additional styling for when the face container is clicked on
+			.active {
+				@include active;
+
+				// Additional styling for face container text
+				small {
+					color: cornflowerblue;
+				}
+			}
+		}
+
+		// Send button
+		.btn {
+			padding: 12px 30px;
+			background: #302d2b;
+			color: white;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+
+			// Send button clicked on effect
+			&:active {
+				transform: scale(0.98);
+			}
+		}
+
+		// Heart icon
+		.fa-heart {
+			margin-bottom: 10px;
+			color: red;
+			font-size: 30px;
+		}
+	}
+}
