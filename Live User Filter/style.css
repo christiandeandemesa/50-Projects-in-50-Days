@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: radial-gradient(ellipse at top left, #ffa449, transparent), radial-gradient(circle at bottom right, #cadb6d, transparent), #643f26;
+  overflow: hidden;
+}
+
+body .container {
+  width: 300px;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+body .container .header {
+  padding: 30px 20px;
+  background: #643f26;
+  color: white;
+}
+
+body .container .header .subtitle {
+  margin: 5px 0 20px;
+  display: inline-block;
+  opacity: 0.8;
+}
+
+body .container .header input {
+  width: 100%;
+  padding: 10px 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+body .container .header input:focus {
+  outline: none;
+}
+
+body .container .header input::-webkit-input-placeholder {
+  color: white;
+}
+
+body .container .header input:-ms-input-placeholder {
+  color: white;
+}
+
+body .container .header input::-ms-input-placeholder {
+  color: white;
+}
+
+body .container .header input::placeholder {
+  color: white;
+}
+
+body .container .user-list {
+  max-height: 400px;
+  background: white;
+  list-style-type: none;
+  overflow-y: auto;
+}
+
+body .container .user-list li {
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .container .user-list li:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+
+body .container .user-list li img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .container .user-list li .user-info {
+  margin-left: 10px;
+}
+
+body .container .user-list li .user-info h4 {
+  margin: 0 0 10px;
+}
+
+body .container .user-list li .user-info p {
+  font-size: 12px;
+}
+
+body .container .user-list .hide {
+  display: none;
+}
+/*# sourceMappingURL=style.css.map */

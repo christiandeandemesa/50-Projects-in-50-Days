@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: radial-gradient(ellipse at top left, #ffa449, transparent),
+		radial-gradient(circle at bottom right, #cadb6d, transparent), #643f26;
+	overflow: hidden;
+
+	// Container
+	.container {
+		width: 300px;
+		border-radius: 5px;
+		box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+		overflow: hidden;
+
+		// Brown header
+		.header {
+			padding: 30px 20px;
+			background: #643f26;
+			color: white;
+
+			// Search by name...
+			.subtitle {
+				margin: 5px 0 20px;
+				display: inline-block;
+				opacity: 0.8;
+			}
+
+			// Search input
+			input {
+				width: 100%;
+				padding: 10px 15px;
+				background: rgba(255, 255, 255, 0.2);
+				color: white;
+				border: none;
+				border-radius: 50px;
+				font-size: 14px;
+
+				// Search input's clicked on effect
+				&:focus {
+					outline: none;
+				}
+
+				// Placeholder
+				&::placeholder {
+					color: white;
+				}
+			}
+		}
+
+		// User container
+		.user-list {
+			max-height: 400px;
+			background: white;
+			list-style-type: none;
+			overflow-y: auto; // Adds a scroll bar on the y-axis if needed.
+
+			// User container
+			li {
+				padding: 20px;
+				display: flex;
+
+				// All user containers execept the last one
+				&:not(:last-of-type) {
+					border-bottom: 1px solid #eee;
+				}
+
+				// User image
+				img {
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+					object-fit: cover;
+				}
+
+				// User info container
+				.user-info {
+					margin-left: 10px;
+
+					// User name
+					h4 {
+						margin: 0 0 10px;
+					}
+
+					// User location
+					p {
+						font-size: 12px;
+					}
+				}
+			}
+
+			// Additional styling to hide users
+			.hide {
+				display: none;
+			}
+		}
+	}
+}
