@@ -176,4 +176,5 @@ https://user-images.githubusercontent.com/85912934/178316941-9f1042be-99d5-465b-
 https://user-images.githubusercontent.com/85912934/178326623-36749047-e830-4a20-bae9-57daa9c6268e.mp4
 
 
-
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Custom%20Range%20Slider' target='_blank' rel="noreferrer noopener">PROJECT 44: CUSTOM RANGE SLIDER</a>
+https://user-images.githubusercontent.com/85912934/178339352-fece1618-ca07-4173-a699-776844d8e0e3.mp4
