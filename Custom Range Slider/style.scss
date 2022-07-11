@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+@mixin track {
+	width: 100%;
+	background: #b6e7ff;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+@mixin thumb {
+	-webkit-appearance: none; // Removes the track thumb.
+	width: 24px;
+	height: 24px;
+	margin-top: -7px;
+	background: url('cloud.png') center/cover no-repeat;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+	overflow: hidden;
+
+	// Title
+	h2 {
+		position: absolute;
+		top: 150px;
+		color: #c685f6;
+		font-weight: bold;
+	}
+
+	// Slider container
+	.range-container {
+		position: relative;
+
+		// Slider
+		#range {
+			width: 300px;
+			margin: 18px 0;
+			-webkit-appearance: none; // Removes the track and replaces it with a white rectangle.
+
+			// Track styling for Chrome, Edge, and Safari
+			&::-webkit-slider-runnable-track {
+				@include track;
+				height: 10px;
+			}
+
+			// Track styling for Firefox
+			&::-moz-range-track {
+				@include track;
+				height: 13px;
+			}
+
+			// Track styling for Internet Explorer
+			&::-ms-track {
+				@include track;
+				height: 10px;
+			}
+
+			// Track thumb styling for Chrome, Edge, and Safari
+			&::-webkit-slider-thumb {
+				@include thumb;
+			}
+
+			// Track thumb styling for Firefox
+			&::-moz-range-thumb {
+				@include thumb;
+			}
+
+			// Track thumb styling for Internet Explorer
+			&::-ms-thumb {
+				@include thumb;
+			}
+		}
+
+		// Label
+		label {
+			position: absolute;
+			width: 80px;
+			top: -25px;
+			left: 110px;
+			padding: 5px 0;
+			background: transparent;
+			border-radius: 4px;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+			text-align: center;
+		}
+	}
+}
