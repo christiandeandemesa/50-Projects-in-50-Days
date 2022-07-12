@@ -178,3 +178,9 @@ https://user-images.githubusercontent.com/85912934/178326623-36749047-e830-4a20-
 
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Custom%20Range%20Slider' target='_blank' rel="noreferrer noopener">PROJECT 44: CUSTOM RANGE SLIDER</a>
 https://user-images.githubusercontent.com/85912934/178339352-fece1618-ca07-4173-a699-776844d8e0e3.mp4
+
+
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Netflix%20Navigation' target='_blank' rel="noreferrer noopener">PROJECT 45: NETFLIX NAVIGATION</a>
+https://user-images.githubusercontent.com/85912934/178394900-ea3932bc-bdbd-4e7c-8029-5cde418a7a84.mp4
+
+
