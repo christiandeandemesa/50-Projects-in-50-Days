@@ -187,3 +187,7 @@ https://user-images.githubusercontent.com/85912934/178394900-ea3932bc-bdbd-4e7c-
 ### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Quiz%20App' target='_blank' rel="noreferrer noopener">PROJECT 46: QUIZ APP</a>
 https://user-images.githubusercontent.com/85912934/178407861-cd55f65b-af3f-4e98-be63-5fc386ce7ff0.mp4
 
+
+### <a href='https://github.com/christiandeandemesa/50-Projects-in-50-Days/tree/master/Testimonial%20Box%20Switcher' target='_blank' rel="noreferrer noopener">PROJECT 47: TESTIMONIAL BOX SWITCHER</a>
+https://user-images.githubusercontent.com/85912934/178420633-9df0ce94-2a23-4418-bf47-1f5baac5276e.mp4
+
