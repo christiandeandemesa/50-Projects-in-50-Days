@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$netflix-red: #f1190a;
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: url('img/bg.jpg') center/cover no-repeat;
+
+	// Hamburger menu button
+	.open-btn {
+		position: fixed;
+		top: 10px;
+		left: 20px;
+		color: white;
+		font-size: 2rem;
+	}
+
+	// Home container
+	.home-logo {
+		padding: 10px 15px 30px;
+		background: rgba(0, 0, 0, 0.7);
+
+		// Home logo
+		.logo {
+			width: 350px;
+		}
+
+		// Mobile Navigation
+		.text {
+			color: white;
+			font-size: 1.5rem;
+			text-align: center;
+		}
+	}
+
+	// White background
+	.nav-white {
+		width: 60%;
+		min-width: 320px;
+		max-width: 480px;
+		background: white;
+		transition-delay: 0.4s;
+
+		// White background with the visibile class name
+		&.visible {
+			transition-delay: 0s;
+		}
+
+		// Red background
+		.nav-red {
+			width: 95%;
+			background: $netflix-red;
+			transition-delay: 0.2s;
+
+			// Navbar
+			.nav-black {
+				position: relative;
+				width: 95%;
+				padding: 40px 0 40px 100px;
+				background: black;
+
+				// Navbar with the visible class name
+				&.visible {
+					transition-delay: 0.4s;
+				}
+
+				// X button
+				.close-btn {
+					position: absolute;
+					top: 10px;
+					right: 30px;
+					color: white;
+					font-size: 2rem;
+				}
+
+				// Navbar logo
+				.logo {
+					width: 150px;
+				}
+
+				// Links container
+				.list {
+					list-style-type: none;
+
+					// Link container
+					li {
+						margin: 20px 0;
+
+						// Links
+						a {
+							color: white;
+							font-size: 14px;
+							text-decoration: none;
+							transition: color 0.4s ease-out;
+
+							// Links hover effect
+							&:hover {
+								color: $netflix-red;
+								transition: color 0.4s ease-out;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// Buttons
+.nav-btn {
+	background: transparent;
+	border: none;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+// Colored backgrounds
+.nav {
+	position: fixed;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	transform: translateX(-100%);
+	transition: transform 0.3s ease-in-out;
+}
+
+// Additional styling for colored backgrounds
+.visible {
+	transform: translateX(0);
+}
+
+// Styling for smaller viewports
+@media (max-width: 915px) {
+	body {
+		.home-logo {
+			.logo {
+				width: 250px;
+			}
+
+			.text {
+				font-size: 1rem;
+			}
+		}
+
+		.nav-white {
+			width: 100%;
+
+			.nav-red {
+				.nav-black {
+					padding: 100px 0 40px 70px;
+
+					.list {
+						li {
+							margin: 30px 0;
+
+							a {
+								font-size: 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

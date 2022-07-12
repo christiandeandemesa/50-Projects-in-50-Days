@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url("img/bg.jpg") center/cover no-repeat;
+}
+
+body .open-btn {
+  position: fixed;
+  top: 10px;
+  left: 20px;
+  color: white;
+  font-size: 2rem;
+}
+
+body .home-logo {
+  padding: 10px 15px 30px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+body .home-logo .logo {
+  width: 350px;
+}
+
+body .home-logo .text {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+body .nav-white {
+  width: 60%;
+  min-width: 320px;
+  max-width: 480px;
+  background: white;
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+body .nav-white.visible {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+body .nav-white .nav-red {
+  width: 95%;
+  background: #f1190a;
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+body .nav-white .nav-red .nav-black {
+  position: relative;
+  width: 95%;
+  padding: 40px 0 40px 100px;
+  background: black;
+}
+
+body .nav-white .nav-red .nav-black.visible {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+body .nav-white .nav-red .nav-black .close-btn {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  color: white;
+  font-size: 2rem;
+}
+
+body .nav-white .nav-red .nav-black .logo {
+  width: 150px;
+}
+
+body .nav-white .nav-red .nav-black .list {
+  list-style-type: none;
+}
+
+body .nav-white .nav-red .nav-black .list li {
+  margin: 20px 0;
+}
+
+body .nav-white .nav-red .nav-black .list li a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+  -webkit-transition: color 0.4s ease-out;
+  transition: color 0.4s ease-out;
+}
+
+body .nav-white .nav-red .nav-black .list li a:hover {
+  color: #f1190a;
+  -webkit-transition: color 0.4s ease-out;
+  transition: color 0.4s ease-out;
+}
+
+.nav-btn {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.nav {
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.visible {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@media (max-width: 915px) {
+  body .home-logo .logo {
+    width: 250px;
+  }
+  body .home-logo .text {
+    font-size: 1rem;
+  }
+  body .nav-white {
+    width: 100%;
+  }
+  body .nav-white .nav-red .nav-black {
+    padding: 100px 0 40px 70px;
+  }
+  body .nav-white .nav-red .nav-black .list li {
+    margin: 30px 0;
+  }
+  body .nav-white .nav-red .nav-black .list li a {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
