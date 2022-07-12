@@ -1,6 +1,6 @@
 # Feedback UI Design
 
--   User can provide a feedback option. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS reset, Font Awesome icons, Google fonts, and event bubbling.
+-   Displays a container where a user can provide a feedback option. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS reset, Font Awesome icons, Google fonts, and event bubbling.
 
 ## How to run this project
 
