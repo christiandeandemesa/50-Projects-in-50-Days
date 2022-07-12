@@ -1,6 +1,6 @@
 # Netflix Navigation
 
--   Netflix themed navigation sidebar. Other features utilized include a custom CSS reset, Font Awesome icons, and Google fonts.
+-   Displays a Netflix themed navigation sidebar. Other features utilized include a custom CSS reset, Font Awesome icons, and Google fonts.
 
 ## How to run this project
 
