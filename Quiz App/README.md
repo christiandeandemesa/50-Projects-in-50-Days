@@ -1,6 +1,6 @@
 # Quiz App
 
--   Quiz application that shows the final score. Other features utilized include a custom CSS reset, Google fonts, and animations.
+-   Displays a quiz that shows the final score. Other features utilized include a custom CSS reset, Google fonts, and animations.
 
 ## How to run this project
 

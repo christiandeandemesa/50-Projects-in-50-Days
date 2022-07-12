@@ -1,6 +1,6 @@
 # Github Profiles
 
--   Displays a card with a specific GitHub user's information. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS reset, Google fonts, the axios library, and the [Github API] (https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api).
+-   Displays a card with a specific GitHub user's information. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS reset, Google fonts, the axios library, and the [Github API](https://docs.github.com/en/rest/guides/getting-started-with-the-rest-api).
 
 ## How to run this project
 
