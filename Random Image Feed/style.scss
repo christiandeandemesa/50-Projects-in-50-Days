@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$btn-color: #ff37a2; // todo
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(to right, #6d003a, #6d3700);
+
+	// Button
+	.btn {
+		position: relative;
+		margin-top: 20px;
+		padding: 10px;
+		background: transparent;
+		color: $btn-color;
+		border: none;
+		border-radius: 10px;
+		font-size: 20px;
+		font-weight: bold;
+		cursor: pointer;
+
+		// Button block
+		&::after,
+		&::before {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 20%;
+			height: 20%;
+			border: 2px solid;
+			transition: all 0.6s ease;
+			border-radius: 2px;
+		}
+
+		// Bottom right of block
+		&::after {
+			bottom: 0;
+			right: 0;
+			border-top-color: transparent;
+			border-left-color: transparent;
+			border-bottom-color: $btn-color;
+			border-right-color: $btn-color;
+		}
+
+		// Top left of block
+		&::before {
+			top: 0;
+			left: 0;
+			border-bottom-color: transparent;
+			border-right-color: transparent;
+			border-top-color: $btn-color;
+			border-left-color: $btn-color;
+		}
+
+		// Block hover effect
+		&:hover:after,
+		&:hover:before {
+			border-bottom-color: $btn-color;
+			border-right-color: $btn-color;
+			border-top-color: $btn-color;
+			border-left-color: $btn-color;
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	// Image container
+	.container {
+		max-width: 1000px;
+		margin-top: 80px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+
+		// Images
+		img {
+			width: 300px;
+			max-width: 100%;
+			height: 300px;
+			margin: 10px;
+			object-fit: cover;
+		}
+	}
+}
