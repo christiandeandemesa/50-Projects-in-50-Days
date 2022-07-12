@@ -1,6 +1,6 @@
 # Testimonial Box Switcher
 
--   Displays a container with different users, their role, and testimonials. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS reset, Font Awesome icons, Google fonts, animations, the axios library, and the [Testimonial API] (https://testimonialapi.toolcarton.com/).
+-   Displays a container with different users, their role, and testimonials. Built using HTML5, CSS3, SASS, and JavaScript. Other features utilized include a custom CSS reset, Font Awesome icons, Google fonts, animations, the axios library, and the [Testimonial API](https://testimonialapi.toolcarton.com/).
 
 ## How to run this project
 
