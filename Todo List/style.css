@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: -webkit-gradient(linear, left top, left bottom, from(#98d4f9), color-stop(#c5e9f9), to(#98d4f9));
+  background: linear-gradient(#98d4f9, #c5e9f9, #98d4f9);
+}
+
+body h1 {
+  color: #9c8b7b;
+  font-size: 10rem;
+  text-align: center;
+}
+
+body form {
+  width: 400px;
+  max-width: 100%;
+  -webkit-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+body form .input {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: block;
+  color: #836752;
+  border: none;
+  font-size: 2rem;
+}
+
+body form .input::-webkit-input-placeholder {
+  color: #836752;
+}
+
+body form .input:-ms-input-placeholder {
+  color: #836752;
+}
+
+body form .input::-ms-input-placeholder {
+  color: #836752;
+}
+
+body form .input::placeholder {
+  color: #836752;
+}
+
+body form .input:focus {
+  outline-color: #9c8b7b;
+}
+
+body form .todos {
+  background: #bfb5a9;
+  color: #fffee1;
+  list-style-type: none;
+}
+
+body form .todos li {
+  padding: 1rem 2rem;
+  border-top: 1px solid #fffee1;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+body form .todos .completed {
+  text-decoration: line-through;
+}
+
+body small {
+  margin-top: 3rem;
+  color: #9c8b7b;
+  text-align: center;
+}
+/*# sourceMappingURL=style.css.map */

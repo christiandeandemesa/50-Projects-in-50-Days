@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+$primary-color: #9c8b7b;
+$secondary-color: #836752;
+$tertiary-color: #fffee1;
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(#98d4f9, #c5e9f9, #98d4f9);
+
+	// todos title
+	h1 {
+		color: $primary-color;
+		font-size: 10rem;
+		text-align: center;
+	}
+
+	// Form
+	form {
+		width: 400px;
+		max-width: 100%;
+		box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+		// Input field
+		.input {
+			width: 100%;
+			padding: 1rem 2rem;
+			display: block;
+			color: $secondary-color;
+			border: none;
+			font-size: 2rem;
+
+			// Input field's placeholder
+			&::placeholder {
+				color: $secondary-color;
+			}
+
+			// Input field's clicked on effect
+			&:focus {
+				outline-color: $primary-color;
+			}
+		}
+
+		// Todos container
+		.todos {
+			background: #bfb5a9;
+			color: $tertiary-color;
+			list-style-type: none;
+
+			// Todo container
+			li {
+				padding: 1rem 2rem;
+				border-top: 1px solid $tertiary-color;
+				font-size: 1.5rem;
+				cursor: pointer;
+			}
+
+			// Completed todo container
+			.completed {
+				text-decoration: line-through;
+			}
+		}
+	}
+
+	// Instructions
+	small {
+		margin-top: 3rem;
+		color: $primary-color;
+		text-align: center;
+	}
+}
