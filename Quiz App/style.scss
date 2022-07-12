@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(45deg, black, #168755, black);
+	overflow: hidden;
+
+	// Container
+	.quiz-container {
+		width: 45%;
+		background: black;
+		color: white;
+		border-radius: 10px;
+		box-shadow: 0 0 10px 2px rgba(100, 100, 100, 0.1);
+		overflow: hidden;
+
+		// Quiz text container
+		.quiz-header {
+			padding: 4rem;
+
+			// Answers container
+			ul {
+				list-style-type: none;
+
+				// Answer container
+				li {
+					margin: 1rem 0;
+					font-size: 1.2rem;
+
+					// Radio buttons
+					input {
+						cursor: pointer;
+					}
+
+					// Answer
+					label {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+
+		// Submit button
+		button {
+			width: 100%;
+			padding: 1.3rem;
+			display: block;
+			background: #6a459d;
+			color: white;
+			border: none;
+			font-size: 1.1rem;
+			cursor: pointer;
+
+			// Submit button's hover effect
+			&:hover {
+				background: #52367b;
+			}
+
+			// Submit button's click effect
+			&:active {
+				background: #3c2759;
+			}
+		}
+	}
+
+	// Rotating question marks
+	.question-mark {
+		position: absolute;
+		color: #52367b;
+		font-size: 5rem;
+		font-weight: bold;
+		animation: rotate 2s linear infinite;
+	}
+
+	// Individual question mark styling
+	.one {
+		top: 5%;
+		left: 25%;
+	}
+
+	.two {
+		top: 45%;
+		left: 15%;
+	}
+
+	.three {
+		bottom: 5%;
+		left: 5%;
+	}
+
+	.four {
+		top: 5%;
+		right: 5%;
+	}
+
+	.five {
+		top: 45%;
+		right: 15%;
+	}
+
+	.six {
+		bottom: 5%;
+		right: 25%;
+	}
+}
+
+// Question and final score
+h2 {
+	padding: 1rem;
+	text-align: center;
+}
+
+// Rotating animation
+@keyframes rotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+// Styling for smaller viewports
+@media (max-width: 885px) {
+	body {
+		.quiz-container {
+			.quiz-header {
+				padding: 3rem 1.5rem;
+
+				ul {
+					li {
+						font-size: 1rem;
+					}
+				}
+			}
+		}
+	}
+
+	h2 {
+		font-size: 1.2rem;
+	}
+}
+
+@media (max-width: 650px) {
+	body {
+		.quiz-container {
+			width: 100%;
+
+			.quiz-header {
+				padding: 3rem;
+			}
+		}
+
+		.one {
+			top: 12%;
+			left: 20%;
+		}
+
+		.two {
+			top: 6%;
+			left: 50%;
+		}
+
+		.three {
+			top: 12%;
+			bottom: unset;
+			left: 80%;
+		}
+
+		.four {
+			top: unset;
+			bottom: 12%;
+			right: 80%;
+		}
+
+		.five {
+			top: unset;
+			bottom: 6%;
+			right: 50%;
+		}
+
+		.six {
+			bottom: 12%;
+			right: 20%;
+		}
+	}
+}
