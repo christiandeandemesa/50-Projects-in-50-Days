@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Press Start 2P', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: url("img/grass.jpg") center/cover;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+body .screen {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: margin 0.5s ease-out;
+  transition: margin 0.5s ease-out;
+}
+
+body .screen h1 {
+  padding: 10px 15px;
+  background: rgba(0, 0, 0, 0.3);
+  line-height: 1.4;
+}
+
+body .screen .btn {
+  margin-top: 30px;
+  padding: 15px 20px;
+  background: white;
+  border: none;
+  cursor: pointer;
+}
+
+body .screen .btn:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+body .screen {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: margin 0.5s ease-out;
+  transition: margin 0.5s ease-out;
+}
+
+body .screen .insects-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style-type: none;
+}
+
+body .screen .insects-list li {
+  margin: 10px;
+}
+
+body .screen .insects-list li .choose-insect-btn {
+  width: 150px;
+  height: 150px;
+  padding: 5px;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+body .screen .insects-list li .choose-insect-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+body .screen .insects-list li .choose-insect-btn:active {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+body .screen .insects-list li .choose-insect-btn img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+body .game-container {
+  position: relative;
+}
+
+body .game-container #time {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 15px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+body .game-container #score {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+body .game-container .message {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  line-height: 1.7;
+  text-align: center;
+  z-index: 2;
+  -webkit-transform: translate(-50%, -150%);
+          transform: translate(-50%, -150%);
+  -webkit-transition: -webkit-transform 0.4s ease-in;
+  transition: -webkit-transform 0.4s ease-in;
+  transition: transform 0.4s ease-in;
+  transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
+}
+
+body .game-container .visible {
+  opacity: 1;
+  -webkit-transform: translate(-50%, 150%);
+          transform: translate(-50%, 150%);
+}
+
+body .game-container .insect {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
+  -webkit-transition: -webkit-transform 0.3s ease-out;
+  transition: -webkit-transform 0.3s ease-out;
+  transition: transform 0.3s ease-out;
+  transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
+  cursor: pointer;
+}
+
+body .game-container .insect img {
+  width: 100px;
+  height: 100px;
+}
+
+body .game-container .caught {
+  -webkit-transform: translate(-50%, -50%) scale(0);
+          transform: translate(-50%, -50%) scale(0);
+}
+
+body .up {
+  margin-top: -100vh;
+}
+/*# sourceMappingURL=style.css.map */

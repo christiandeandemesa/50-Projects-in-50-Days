@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+@mixin screen {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	transition: margin 0.5s ease-out;
+}
+
+* {
+	box-sizing: border-box; // Height and width aren't affected by borders and padding.
+	font-family: 'Press Start 2P', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	height: 100vh;
+	background: url('img/grass.jpg') center/cover;
+	color: white;
+	text-align: center;
+	overflow: hidden;
+
+	// Play game screen
+	.screen {
+		@include screen;
+
+		// Catch the Insect
+		h1 {
+			padding: 10px 15px;
+			background: rgba(0, 0, 0, 0.3);
+			line-height: 1.4;
+		}
+
+		// Play game button
+		.btn {
+			margin-top: 30px;
+			padding: 15px 20px;
+			background: white;
+			border: none;
+			cursor: pointer;
+
+			// Play game button clicked on effect
+			&:active {
+				transform: scale(0.98);
+			}
+		}
+	}
+
+	// Choose insect screen
+	.screen {
+		@include screen;
+
+		// Insects container
+		.insects-list {
+			display: flex;
+			justify-content: center;
+			flex-wrap: wrap;
+			list-style-type: none;
+
+			// Insect container
+			li {
+				margin: 10px;
+
+				// Choose insect button
+				.choose-insect-btn {
+					width: 150px;
+					height: 150px;
+					padding: 5px;
+					background: rgba(0, 0, 0, 0.3);
+					color: white;
+					border: 2px solid white;
+					cursor: pointer;
+
+					// Choose insect button hover effect
+					&:hover {
+						background: rgba(255, 255, 255, 0.3);
+					}
+
+					// Choose insect button clicked on effect
+					&:active {
+						background: rgba(255, 255, 255, 0.6);
+					}
+
+					// Insect image
+					img {
+						width: 100px;
+						height: 100px;
+						object-fit: contain;
+					}
+				}
+			}
+		}
+	}
+
+	// Game screen
+	.game-container {
+		position: relative;
+
+		// Timer
+		#time {
+			position: absolute;
+			top: 20px;
+			left: 20px;
+			padding: 10px 15px;
+			background: rgba(0, 0, 0, 0.3);
+		}
+
+		// Score
+		#score {
+			position: absolute;
+			top: 20px;
+			right: 20px;
+			padding: 10px 15px;
+			background: rgba(0, 0, 0, 0.3);
+		}
+
+		// Message
+		.message {
+			position: absolute;
+			width: 100%;
+			top: 0;
+			left: 50%;
+			padding: 20px;
+			background: rgba(0, 0, 0, 0.7);
+			opacity: 0;
+			line-height: 1.7;
+			text-align: center;
+			z-index: 2;
+			transform: translate(-50%, -150%);
+			transition: transform 0.4s ease-in;
+		}
+
+		// Visible message effect
+		.visible {
+			opacity: 1;
+			transform: translate(-50%, 150%);
+		}
+
+		// Game insect
+		.insect {
+			position: absolute;
+			width: 100px;
+			height: 100px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transform: translate(-50%, -50%) scale(1);
+			transition: transform 0.3s ease-out;
+			cursor: pointer;
+
+			// Game insect image
+			img {
+				width: 100px;
+				height: 100px;
+			}
+		}
+
+		// Game insect shrink effect
+		.caught {
+			transform: translate(-50%, -50%) scale(0);
+		}
+	}
+
+	// Move between screens effect
+	.up {
+		margin-top: -100vh;
+	}
+}

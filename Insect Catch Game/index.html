@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Insect Catch Game</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!--Play game screen-->
+		<div class="screen">
+			<h1>Catch the Insect</h1>
+
+			<!--Play game button-->
+			<button class="btn" id="start-btn">Play Game</button>
+		</div>
+
+		<!--Choose insect screen-->
+		<div class="screen">
+			<h1>What is your "favorite" insect?</h1>
+
+			<!--Insects container-->
+			<ul class="insects-list">
+				<!--Ladybug container-->
+				<li>
+					<button class="choose-insect-btn">
+						<p>Ladybug</p>
+						<img src="img/ladybug.png" alt="ladybug" />
+					</button>
+				</li>
+
+				<!--Bee container-->
+				<li>
+					<button class="choose-insect-btn">
+						<p>Bee</p>
+						<img src="img/bee.png" alt="bee" />
+					</button>
+				</li>
+
+				<!--Butterfly container-->
+				<li>
+					<button class="choose-insect-btn">
+						<p>Butterfly</p>
+						<img src="img/butterfly.png" alt="butterfly" />
+					</button>
+				</li>
+			</ul>
+		</div>
+
+		<!--Game screen-->
+		<div class="screen game-container">
+			<!--Timer-->
+			<h3 id="time">Time: 00:00</h3>
+
+			<!--Score-->
+			<h3 id="score">Score: 0</h3>
+
+			<!--Message-->
+			<h5 class="message">
+				Are you annoyed yet?
+				<br />
+				You are playing an impossible game.
+			</h5>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
